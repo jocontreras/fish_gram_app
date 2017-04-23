@@ -1,0 +1,21 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: adventure_api_development
+
+test: &test
+  <<: *default
+  database: adventure_api_test
+
+production:
+  <<: *default
+  database: adventure_api_production
+  username: adventure_api
+  password: <%= ENV['ADVENTURE_API_DATABASE_PASSWORD'] %>
+
+cucumber:
+  <<: *test
