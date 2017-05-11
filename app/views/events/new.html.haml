@@ -1,0 +1,14 @@
+%h3 Create a new event
+= form_for (@events) do |f|
+  .field
+    =f.label :title
+    %br/
+    =f.text_field :title
+  .field
+    =f.label :content
+    %br/
+    =f.text_field :content
+  .actions
+    =f.submit "Save"
+- if flash[:notice]
+  .notice= flash[:notice]

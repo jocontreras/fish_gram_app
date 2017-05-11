@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe Api::V1::EventsController, type: :request do
   let!(:event) { create(:event,
     title: 'Beach Party',
-    content: 'Enjoy your summer vacation')}
+    content: 'Enjoy your summer vacation at Boracay')}
 
   describe 'GET /v1/events' do
     it 'should return all the event titles and content' do
@@ -12,7 +12,7 @@ RSpec.describe Api::V1::EventsController, type: :request do
       expected_response = [{
         'id' => event.id,
         'title' => 'Beach Party',
-        'content' => 'Enjoy your summer vacation'
+        'content' => 'Enjoy your summer vacation at Boracay'
       }]
 
       expect(response_json).to eq expected_response
