@@ -7,7 +7,7 @@ development:
   <<: *default
   database: adventure_api_development
 
-test: &test
+test:
   <<: *default
   database: adventure_api_test
 
@@ -16,6 +16,3 @@ production:
   database: adventure_api_production
   username: adventure_api
   password: <%= ENV['ADVENTURE_API_DATABASE_PASSWORD'] %>
-
-cucumber:
-  <<: *test
