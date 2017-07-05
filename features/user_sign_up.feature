@@ -20,3 +20,5 @@ Feature: Admin sign up
    When I fill in "Email" with ""
    Then I click "Sign up"
    And I should see "Email can't be blank"
+
+   

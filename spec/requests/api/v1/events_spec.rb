@@ -12,7 +12,8 @@ RSpec.describe Api::V1::EventsController, type: :request do
       expected_response = [{
         'id' => event.id,
         'title' => 'Beach Party',
-        'content' => 'Enjoy your summer vacation at Boracay'
+        'content' => 'Enjoy your summer vacation at Boracay',
+        'date' => events.created_at.strftime('%F %H:%M')
       }]
 
       expect(response_json).to eq expected_response
