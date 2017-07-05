@@ -1,5 +1,5 @@
 Given(/^I am on the root page$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+  visit root_path
 end
 
 Then(/^I select "([^"]*)" from "([^"]*)"$/) do |arg1, arg2|
@@ -11,5 +11,5 @@ Then(/^"([^"]*)" should be marked as "([^"]*)"$/) do |arg1, arg2|
 end
 
 Given(/^I am on the registration page$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+  visit new_user_registration_path
 end

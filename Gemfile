@@ -6,11 +6,11 @@ gem 'puma', '~> 3.0'
 gem 'jbuilder', '~> 2.5'
 gem 'rack-cors', require: 'rack/cors'
 gem 'haml-rails'
+gem 'devise'
 gem 'devise_token_auth'
 gem 'omniauth'
 
 group :development, :test do
-  gem 'pry'
   gem 'pry-byebug'
   gem 'rspec-rails'
   gem 'shoulda-matchers'
@@ -22,6 +22,7 @@ group :development, :test do
 end
 
 group :development do
+  gem 'web-console', '>= 3.3.0'
   gem 'listen', '~> 3.0.5'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
