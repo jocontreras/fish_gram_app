@@ -11,6 +11,10 @@ class EventsController < ApplicationController
     end
   end
 
+  def index
+    @events = Event.all
+  end
+
   def events_params
     params.require(:event).permit(:title, :content)
   end
