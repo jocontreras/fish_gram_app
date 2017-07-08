@@ -24,12 +24,24 @@ RSpec.describe Api::V1::RegistrationsController, type: :request do
             expect(User.last.role).to eq 'admin'
         end
 
-        it 'returns error when email is missing' do
-
+        describe 'create member with email missing' do
+            it 'returns error when email is missing' do
+                post '/api/v1/auth', params: { email: '',
+                                               password: 'password',
+                                               password_confirmation: 'password' },
+                                     headers: headers
+                expect(response).to have_http_status(422)
+            end
         end
 
-        it 'returns error is password confirmation is not a match' do
-
+        describe 'create member with invalid password confirmation' do
+            it 'returns error if password confirmation is not a match' do
+                post '/api/v1/auth', params: { email: 'user@random.com',
+                                               password: 'password',
+                                               password_confirmation: 'word' },
+                                     headers: headers
+                expect(response).to have_http_status(422)
+            end
         end
     end
 end

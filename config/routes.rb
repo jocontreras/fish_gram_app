@@ -1,7 +1,17 @@
 Rails.application.routes.draw do
 
 devise_for :users, controllers: { sessions: "users/sessions" }
-root controller: :index, action: :index
+
+devise_scope :user do
+    authenticated :user do
+      root :to => 'index#index'
+    end
+    unauthenticated :user do
+      root :to => 'devise/registrations#new', as: :unauthenticated_root
+    end
+  end
+
+#root controller: :index, action: :index
 
 resources :events
 

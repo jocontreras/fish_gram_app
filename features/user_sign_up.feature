@@ -4,7 +4,7 @@ Feature: User Sign Up
   I should be able to sign up
 
 Scenario: I create an account
-  Given I am on the index page
+  Given I am on the root page
   And I click link "Sign up"
   Then I should see "Sign up"
   And I fill in "Email" with "user@random.com"

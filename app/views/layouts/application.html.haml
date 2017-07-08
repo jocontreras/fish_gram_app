@@ -7,5 +7,14 @@
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   %body
+    %ul
+      %li
+        = link_to 'Home', root_path
+      %li
+        = link_to 'Sign up', new_user_registration_path
+      %li
 
+    %p.alert= alert
+    - if flash[:notice]
+      .notice= flash[:notice]
     = yield
