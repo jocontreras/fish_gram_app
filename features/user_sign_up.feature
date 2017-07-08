@@ -5,10 +5,11 @@ Feature: User Sign Up
 
 Scenario: I create an account
   Given I am on the root page
-  And I click link "Sign up"
-  Then I should see "Sign up"
+  Then I click link "Sign up" 
   And I fill in "Email" with "user@random.com"
+  And I select "admin" from "Role"
   And I fill in "Password" with "12345678"
   And I fill in "Password confirmation" with "12345678"
   And I click "Sign up"
-  Then I should see "You have signed up successfully."
+  And I should see "You have signed up successfully."
+  Then "user@random.com" should be marked as "admin"

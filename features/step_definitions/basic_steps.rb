@@ -14,7 +14,7 @@ Then(/^show me the page$/) do
  save_and_open_page
 end
 
-Given(/^the following user exist$/) do |table|
+Given(/^the following users exist$/) do |table|
   table.hashes.each do |hash|
    create(:user, hash)
   end

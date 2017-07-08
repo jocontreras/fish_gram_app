@@ -11,6 +11,12 @@ RSpec.describe User, type: :model do
     it { is_expected.to validate_presence_of :email }
   end
 
+  describe 'Custom Validations' do
+    it 'has a default user role of member' do
+      expect(subject.role).to eq 'member'
+    end
+  end
+
   describe 'Factory' do
     it 'should have valid Factory' do
       expect(create(:user)).to be_valid

@@ -1,0 +1,121 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require foundation_and_overrides
+
+ */
+
+.row {
+max-width: 100%; }
+
+.menu {
+  background-color:#088DA5;
+  padding: 1.5rem 3rem;
+  height: 100%;
+  }
+  .menu .inline-list {
+    display: block;
+    text-align: center;
+    padding: 0px 0px;
+    font-size:130%;}
+    .menu .inline-list li {
+      float: none;
+      display: inline-block;
+      margin: 10px, 10px;}
+    .menu .inline-list a {
+      color: #fff;}
+      .menu .inline-list a:hover {
+        color: #87d37c;
+        transition: all .3s ease-in-out; }
+    .menu .inline-list .active a {
+      color: #87d37c; }
+  .menu .account {
+    position: absolute;
+    top: 3%;
+    right: 3%; }
+    .menu .account a, .menu .account i {
+      color: #fff; }
+  @media only screen and (min-width: 40.063em) {
+    .menu {
+      height: 5rem; }
+      .menu .inline-list {
+        float: left;
+        margin: 0 0 0 1.5rem; }
+      .menu a:hover {
+        border-bottom: 2px solid #87d37c; } }
+  .menu .account-action {
+    float: right;
+    margin: -.75rem 0 0 0; }
+    .menu .account-action li {
+      margin-left: .2rem; }
+    .menu .account-action a {
+      padding: 0.75rem 1rem; }
+    .menu .account-action a.signup {
+      font-weight: bold;
+      background-color: #3d4146;
+      border-radius: 3px; }
+
+.name {
+  text-align: center;
+  font-size: 2.0rem;
+  line-height: 1;
+  margin: 0 0 1rem 0;
+  color: #fff; }
+  .name i {
+    color: #87d37c;
+    margin-right: 0.5rem; }
+  @media only screen and (min-width: 40.063em) {
+    .name {
+      float: left; } }
+
+      ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+      }
+
+      li {
+          float: left;
+      }
+
+      li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 0px 16px;
+          text-decoration: none;
+      }
+
+      /* Change the link color to #111 (black) on hover */
+      li a:hover {
+          background-color: #111;
+      }
+
+      .hero{
+        width: 100%;
+        background-image: url(/assets/elnido.jpg);
+        min-height: 450px;
+        padding: 20px 0px 30px 0px;
+        margin-bottom: 30px;
+        background-size: cover;
+        color: #fff;
+        font-style: oblique;
+      }
+
+      .wrap{
+        width: 90%;
+        max-width: 1200%; /*only the content*/
+        margin: auto;
+      }
