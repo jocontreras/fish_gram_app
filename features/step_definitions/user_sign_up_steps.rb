@@ -2,14 +2,19 @@ Given(/^I am on the root page$/) do
   visit root_path
 end
 
-Then(/^I select "([^"]*)" from "([^"]*)"$/) do |arg1, arg2|
-  pending # Write code here that turns the phrase above into concrete actions
-end
-
-Then(/^"([^"]*)" should be marked as "([^"]*)"$/) do |arg1, arg2|
-  pending # Write code here that turns the phrase above into concrete actions
+Given(/^I click link "([^"]*)"$/) do |link|
+  click_link link
 end
 
 Given(/^I am on the registration page$/) do
   visit new_user_registration_path
+end
+
+Then(/^I select "([^"]*)" from "([^"]*)"$/) do |option, choices|
+  select option, from: choices
+end
+
+Then(/^"([^"]*)" should be marked as "([^"]*)"$/) do |email, option|
+  user = User.find_by(email: email)
+  expect(user.role).to eq option
 end

@@ -15,6 +15,7 @@ class EventsController < ApplicationController
     @events = Event.all
   end
 
+private
   def events_params
     params.require(:event).permit(:title, :content)
   end
