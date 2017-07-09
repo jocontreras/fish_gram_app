@@ -1,9 +1,6 @@
-class User < ApplicationRecord
-  VALID_ROLES = ['admin', 'member']
+class User < ActiveRecord::Base
   # Include default devise modules.
   devise :database_authenticatable, :registerable,
           :recoverable, :rememberable, :trackable, :validatable
   include DeviseTokenAuth::Concerns::User
-
-  validates :role, inclusion: {in: VALID_ROLES, message: '%{value} is not a valid user role'}
 end

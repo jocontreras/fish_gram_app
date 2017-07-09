@@ -1,5 +1,4 @@
 require_relative 'boot'
-
 require "rails"
 require "active_model/railtie"
 require "active_job/railtie"
@@ -8,7 +7,6 @@ require "action_controller/railtie"
 require "action_mailer/railtie"
 require "action_view/railtie"
 require "action_cable/engine"
-require 'devise'
 
 Bundler.require(*Rails.groups)
 
@@ -23,6 +21,7 @@ module AdventureApi
       generate.routing_specs false
       generate.controller_specs false
     end
+
     config.middleware.insert_before 0, Rack::Cors do
       allow do
         origins '*'
