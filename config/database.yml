@@ -10,7 +10,7 @@ development:
 test:
   <<: *default
   database: adventure_api_test
-
+  
 production:
   <<: *default
   database: adventure_api_production
