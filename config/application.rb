@@ -8,7 +8,6 @@ require "action_mailer/railtie"
 require "action_view/railtie"
 require "action_cable/engine"
 
-
 Bundler.require(*Rails.groups)
 
 module AdventureApi
@@ -22,6 +21,7 @@ module AdventureApi
       generate.routing_specs false
       generate.controller_specs false
     end
+
     config.middleware.insert_before 0, Rack::Cors do
       allow do
         origins '*'

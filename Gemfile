@@ -7,6 +7,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'rack-cors', require: 'rack/cors'
 gem 'haml-rails'
 gem 'foundation-rails'
+gem 'devise_token_auth'
+gem 'omniauth'
 
 
 group :development, :test do
