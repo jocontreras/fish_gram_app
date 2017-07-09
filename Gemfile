@@ -9,6 +9,7 @@ gem 'haml-rails'
 gem 'foundation-rails'
 gem 'devise_token_auth'
 gem 'omniauth'
+gem 'remotipart'
 
 
 group :development, :test do
