@@ -10,6 +10,8 @@ require "action_cable/engine"
 
 Bundler.require(*Rails.groups)
 
+
+
 module AdventureApi
   class Application < Rails::Application
     config.autoload_paths += %W(#{config.root}/lib)

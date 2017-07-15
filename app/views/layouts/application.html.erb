@@ -1,0 +1,33 @@
+<!DOCTYPE Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>
+      <%= content_for?(:title) ? yield(:title) : "United Anglers" %>
+    </title>
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <nav class="menu">
+      <h1 class="name">
+        <i class="fi-widget"></i>
+        United Anglers Fishing App
+      </h1>
+    </nav>
+    <% if notice %>
+      <p class="alert alert-success">
+        <%= notice %>
+      </p>
+    <% end %>
+    <% if alert %>
+      <p class="alert alert-danger">
+        <%= alert %>
+      </p>
+    <% end %>
+    <%= yield %>
+  </body>
+</html>

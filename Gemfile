@@ -4,13 +4,19 @@ gem 'rails', '~> 5.0.2'
 gem 'pg', '~> 0.18'
 gem 'puma', '~> 3.0'
 gem 'jbuilder', '~> 2.5'
+gem 'sass-rails', '~> 5.0.6'
+gem 'uglifier', '>= 3.2.0'
+gem 'jquery-rails'
 gem 'rack-cors', require: 'rack/cors'
+gem 'railties', '~>5.0.4'
 gem 'haml-rails'
+gem 'turbolinks'
 gem 'foundation-rails'
 gem 'devise'
 gem 'devise_token_auth'
 gem 'omniauth'
-gem 'remotipart'
+gem 'rails_12factor', group: :production
+#gem 'remotipart'
 
 
 group :development, :test do

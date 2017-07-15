@@ -1,9 +1,9 @@
 <section class="hero">
   <div class="wrap">
-    <h2><i>Hello! Welcome to Fish App</i></h2>
+    <h2>
+      <i>Hello! Welcome to Fish App</i>
+    </h2>
   </div>
-
-<%= link_to 'Sign up', new_user_registration_path %>
-<%= link_to 'Sign out', destroy_user_session_path, {method: :delete} %>
-
+  <%= link_to 'Sign up', new_user_registration_path %>
+  <%= link_to 'Sign out', destroy_user_session_path, {method: :delete} %>
 </section>
