@@ -3,16 +3,17 @@ Rails.application.routes.draw do
 
   root to: "home#index"
 
-  devise_for :users
-    devise_scope :user do
-      authenticated :user do
-        root :to => 'home#index'
-      end
-      unauthenticated :user do
-        root :to => 'devise/registrations#new', as: :unauthenticated_root
-      end
+  devise_for :users, controllers: {
+    registrations: 'registrations'
+  }
+  devise_scope :user do
+    authenticated :user do
+      root to: 'home#index'
     end
-
+    unauthenticated :user do
+      root to: 'devise/registrations#new', as: :unauthenticated_root
+    end
+  end
 #mount_devise_token_auth_for 'User', at: 'auth'
 
 #root controller: :index, action: :index
