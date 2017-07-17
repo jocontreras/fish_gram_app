@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
 
-
   root to: "home#index"
 
   devise_for :users, controllers: {
@@ -15,8 +14,6 @@ Rails.application.routes.draw do
     end
   end
 #mount_devise_token_auth_for 'User', at: 'auth'
-
-#root controller: :index, action: :index
 
 resources :events
 

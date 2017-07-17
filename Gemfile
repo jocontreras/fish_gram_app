@@ -9,13 +9,12 @@ gem 'sass-rails', '~> 5.0.6'
 gem 'uglifier', '>= 3.2.0'
 gem 'jquery-rails'
 gem 'rack-cors', require: 'rack/cors'
-gem 'railties', '~>5.0.4'
 gem 'haml-rails'
 gem 'turbolinks'
 gem 'devise'
 gem 'devise_token_auth'
-gem 'omniauth'
-gem 'rails_12factor', group: :production
+#gem 'omniauth'
+#gem 'rails_12factor', group: :production
 #gem 'remotipart'
 
 

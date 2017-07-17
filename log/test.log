@@ -13608,3 +13608,1073 @@ Processing by Devise::RegistrationsController#create as HTML
   Rendered devise/registrations/new.html.erb within layouts/application (6.9ms)
 Completed 200 OK in 46ms (Views: 24.8ms | ActiveRecord: 1.0ms)
   [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (23.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (9.7ms)[0m  [1m[32mINSERT INTO "events" ("title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "MyString"], ["content", "MyText"], ["created_at", "2017-07-16 17:33:30.742102"], ["updated_at", "2017-07-16 17:33:30.742102"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (53.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "mail@mail.com"]]
+  [1m[35mSQL (15.4ms)[0m  [1m[32mINSERT INTO "users" ("uid", "encrypted_password", "email", "tokens", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["uid", "mail@mail.com"], ["encrypted_password", "$2a$04$.gdcCG1YUDRC1wwTVg5cVed9si./fWvaMiV98VMuj5DKe1/R8PjXO"], ["email", "mail@mail.com"], ["tokens", "{}"], ["created_at", "2017-07-16 17:33:30.839112"], ["updated_at", "2017-07-16 17:33:30.839112"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" IS NULL[0m  [["provider", "email"]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" IS NULL[0m  [["provider", "email"]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" IS NULL[0m  [["provider", "email"]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" IS NULL[0m  [["provider", "email"]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "asdf@ ds.com"]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "@example.com"]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "test me @yahoo.com"]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "asdf@example"]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "ddd@.d. .d"]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "ddd@.d"]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "asdf@ds.com"]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "hello@example.uk"]]
+  [1m[35m (4.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "test1234@yahoo.si"]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "asdf@example.eu"]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "events" ("title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Beach Party"], ["content", "Enjoy your summer vacation at Boracay"], ["created_at", "2017-07-16 17:33:31.965557"], ["updated_at", "2017-07-16 17:33:31.965557"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/api/v1/events" for 127.0.0.1 at 2017-07-16 19:33:31 +0200
+Processing by Api::V1::EventsController#index as JSON
+  Rendering api/v1/events/index.json.jbuilder
+  [1m[36mEvent Load (14.7ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered api/v1/events/index.json.jbuilder (38.7ms)
+Could not log "render_template.action_view" event. NoMethodError: undefined method `render_views?' for RSpec::ExampleGroups::ApiV1EventsController::GETV1Events:Class ["/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example_group.rb:732:in `method_missing'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-rails-3.6.0/lib/rspec/rails/view_rendering.rb:71:in `render_template'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/subscriber.rb:95:in `finish'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/log_subscriber.rb:83:in `finish'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/notifications/fanout.rb:102:in `finish'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/notifications/fanout.rb:46:in `block in finish'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/notifications/fanout.rb:46:in `each'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/notifications/fanout.rb:46:in `finish'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/notifications/instrumenter.rb:42:in `finish_with_state'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/notifications/instrumenter.rb:27:in `instrument'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/notifications.rb:164:in `instrument'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionview-5.0.4/lib/action_view/renderer/abstract_renderer.rb:41:in `instrument'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionview-5.0.4/lib/action_view/renderer/template_renderer.rb:53:in `block in render_template'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionview-5.0.4/lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionview-5.0.4/lib/action_view/renderer/template_renderer.rb:52:in `render_template'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionview-5.0.4/lib/action_view/renderer/template_renderer.rb:14:in `render'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionview-5.0.4/lib/action_view/renderer/renderer.rb:42:in `render_template'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionview-5.0.4/lib/action_view/renderer/renderer.rb:23:in `render'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionview-5.0.4/lib/action_view/rendering.rb:104:in `_render_template'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal/streaming.rb:217:in `_render_template'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionview-5.0.4/lib/action_view/rendering.rb:83:in `render_to_body'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal/rendering.rb:52:in `render_to_body'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal/renderers.rb:142:in `render_to_body'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/abstract_controller/rendering.rb:26:in `render'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal/rendering.rb:36:in `render'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/core_ext/benchmark.rb:12:in `block in ms'", "/Users/mac1/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/core_ext/benchmark.rb:12:in `ms'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal/instrumentation.rb:44:in `block in render'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.4/lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal/instrumentation.rb:43:in `render'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal/implicit_render.rb:36:in `default_render'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/abstract_controller/base.rb:188:in `process_action'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal/rendering.rb:30:in `process_action'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/abstract_controller/callbacks.rb:20:in `block in process_action'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/callbacks.rb:126:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/callbacks.rb:506:in `block (2 levels) in compile'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/callbacks.rb:455:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/callbacks.rb:101:in `__run_callbacks__'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/callbacks.rb:90:in `run_callbacks'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/abstract_controller/callbacks.rb:19:in `process_action'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal/rescue.rb:20:in `process_action'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/notifications.rb:164:in `block in instrument'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/notifications/instrumenter.rb:21:in `instrument'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/notifications.rb:164:in `instrument'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal/instrumentation.rb:30:in `process_action'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal/params_wrapper.rb:248:in `process_action'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.4/lib/active_record/railties/controller_runtime.rb:18:in `process_action'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/abstract_controller/base.rb:126:in `process'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionview-5.0.4/lib/action_view/rendering.rb:30:in `process'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal.rb:190:in `dispatch'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal.rb:262:in `dispatch'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/routing/route_set.rb:50:in `dispatch'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/routing/route_set.rb:32:in `serve'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/journey/router.rb:39:in `block in serve'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/journey/router.rb:26:in `each'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/journey/router.rb:26:in `serve'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/routing/route_set.rb:725:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rack-cors-1.0.0/lib/rack/cors.rb:93:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/warden-1.2.7/lib/warden/manager.rb:36:in `block in call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/warden-1.2.7/lib/warden/manager.rb:35:in `catch'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/warden-1.2.7/lib/warden/manager.rb:35:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rack-2.0.3/lib/rack/etag.rb:25:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rack-2.0.3/lib/rack/conditional_get.rb:25:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rack-2.0.3/lib/rack/head.rb:12:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rack-2.0.3/lib/rack/session/abstract/id.rb:232:in `context'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rack-2.0.3/lib/rack/session/abstract/id.rb:226:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/middleware/cookies.rb:613:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/callbacks.rb:97:in `__run_callbacks__'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/callbacks.rb:750:in `_run_call_callbacks'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/callbacks.rb:90:in `run_callbacks'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/middleware/callbacks.rb:36:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/railties-5.0.4/lib/rails/rack/logger.rb:36:in `call_app'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/railties-5.0.4/lib/rails/rack/logger.rb:24:in `block in call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/tagged_logging.rb:69:in `block in tagged'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/tagged_logging.rb:26:in `tagged'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/tagged_logging.rb:69:in `tagged'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/railties-5.0.4/lib/rails/rack/logger.rb:24:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/middleware/request_id.rb:24:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/middleware/executor.rb:12:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/middleware/static.rb:136:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rack-cors-1.0.0/lib/rack/cors.rb:93:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/railties-5.0.4/lib/rails/engine.rb:522:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rack-test-0.6.3/lib/rack/mock_session.rb:30:in `request'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rack-test-0.6.3/lib/rack/test.rb:244:in `process_request'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rack-test-0.6.3/lib/rack/test.rb:124:in `request'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/testing/integration.rb:334:in `process'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/testing/integration.rb:364:in `process_with_kwargs'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/testing/integration.rb:15:in `get'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/testing/integration.rb:442:in `block (2 levels) in <module:Runner>'", "/Users/mac1/Projects/adventurers_hub_backend/spec/requests/api/v1/events_spec.rb:10:in `block (3 levels) in <top (required)>'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example.rb:254:in `instance_exec'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example.rb:254:in `block in run'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example.rb:500:in `block in with_around_and_singleton_context_hooks'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example.rb:457:in `block in with_around_example_hooks'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/hooks.rb:464:in `block in run'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/hooks.rb:604:in `block in run_around_example_hooks_for'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example.rb:342:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-rails-3.6.0/lib/rspec/rails/adapters.rb:127:in `block (2 levels) in <module:MinitestLifecycleAdapter>'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example.rb:447:in `instance_exec'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example.rb:447:in `instance_exec'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/hooks.rb:375:in `execute_with'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/hooks.rb:606:in `block (2 levels) in run_around_example_hooks_for'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example.rb:342:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/hooks.rb:607:in `run_around_example_hooks_for'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/hooks.rb:464:in `run'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example.rb:457:in `with_around_example_hooks'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example.rb:500:in `with_around_and_singleton_context_hooks'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example.rb:251:in `run'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example_group.rb:627:in `block in run_examples'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example_group.rb:623:in `map'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example_group.rb:623:in `run_examples'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example_group.rb:589:in `run'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example_group.rb:590:in `block in run'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example_group.rb:590:in `map'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example_group.rb:590:in `run'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/runner.rb:118:in `block (3 levels) in run_specs'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/runner.rb:118:in `map'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/runner.rb:118:in `block (2 levels) in run_specs'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/configuration.rb:1894:in `with_suite_hooks'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/runner.rb:113:in `block in run_specs'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/reporter.rb:79:in `report'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/runner.rb:112:in `run_specs'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/runner.rb:87:in `run'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/runner.rb:71:in `run'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/runner.rb:45:in `invoke'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/exe/rspec:4:in `<main>'"]
+Completed 200 OK in 131ms (Views: 85.2ms | ActiveRecord: 14.7ms)
+  [1m[35m (0.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-07-16 19:33:32 +0200
+Processing by DeviseTokenAuth::RegistrationsController#create as JSON
+  Parameters: {"email"=>"mail@mail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "mail@mail.com"]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "users" ("uid", "encrypted_password", "email", "tokens", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["uid", "mail@mail.com"], ["encrypted_password", "$2a$04$lyR.9sucUajfHrKF/WMYLefBfl17L5KPEa6KdY2taS2iuvK32BamO"], ["email", "mail@mail.com"], ["tokens", "{}"], ["created_at", "2017-07-16 17:33:32.494433"], ["updated_at", "2017-07-16 17:33:32.494433"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[33mUPDATE "users" SET "tokens" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["tokens", "{\"wtTX2aNfb2jlcRX7iKy_pA\":{\"token\":\"$2a$10$yf1vaKNcHcJEJTdG5XjuIuBTsJNqtE/k4aEDD7cvVnDLoWAVdXQXi\",\"expiry\":1501436012}}"], ["updated_at", "2017-07-16 17:33:32.584019"], ["id", 69]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[37mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2 FOR UPDATE[0m  [["id", 69], ["LIMIT", 1]]
+  [1m[35mSQL (0.7ms)[0m  [1m[33mUPDATE "users" SET "tokens" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["tokens", "{\"wtTX2aNfb2jlcRX7iKy_pA\":{\"token\":\"$2a$10$oFqTGbf6TQw8tmqnCUKo2ubiDmEXsvkK4FxrtaZU0LbPO2gPpCSlC\",\"expiry\":1501436012,\"last_token\":\"$2a$10$yf1vaKNcHcJEJTdG5XjuIuBTsJNqtE/k4aEDD7cvVnDLoWAVdXQXi\",\"updated_at\":\"2017-07-16T19:33:32.675+02:00\"}}"], ["updated_at", "2017-07-16 17:33:32.676311"], ["id", 69]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 255ms (Views: 0.7ms | ActiveRecord: 4.3ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-07-16 19:33:32 +0200
+Processing by DeviseTokenAuth::RegistrationsController#create as JSON
+  Parameters: {"email"=>"mail@mail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "mail@mail.com"]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 422 Unprocessable Entity in 9ms (Views: 0.4ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-07-16 19:33:32 +0200
+Processing by DeviseTokenAuth::RegistrationsController#create as JSON
+  Parameters: {"email"=>"mail@mail", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "mail@mail"]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 422 Unprocessable Entity in 7ms (Views: 0.4ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "example@gmail.com"]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "users" ("uid", "encrypted_password", "email", "tokens", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["uid", "example@gmail.com"], ["encrypted_password", "$2a$04$wicrwiL09nhbpp9yAJFFkOxK/JOVj5psMa3k/Ank76mdoQWN989GC"], ["email", "example@gmail.com"], ["tokens", "{}"], ["created_at", "2017-07-16 17:33:32.714232"], ["updated_at", "2017-07-16 17:33:32.714232"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-07-16 19:33:32 +0200
+Processing by DeviseTokenAuth::RegistrationsController#create as JSON
+  Parameters: {"email"=>"example@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "example@gmail.com"]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 422 Unprocessable Entity in 11ms (Views: 0.5ms | ActiveRecord: 1.2ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "mail@mail.com"]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "users" ("uid", "encrypted_password", "email", "tokens", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["uid", "mail@mail.com"], ["encrypted_password", "$2a$04$0vVuSRKBkaUzbs/ctqqgE.imWGHdQ4cOBYIzQZ0iFBHQJdB99bWh2"], ["email", "mail@mail.com"], ["tokens", "{}"], ["created_at", "2017-07-16 17:33:32.735697"], ["updated_at", "2017-07-16 17:33:32.735697"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/api/v1/auth/sign_in" for 127.0.0.1 at 2017-07-16 19:33:32 +0200
+Processing by DeviseTokenAuth::SessionsController#create as JSON
+  Parameters: {"email"=>"mail@mail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (email = 'mail@mail.com' AND provider='email') ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "users" SET "tokens" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["tokens", "{\"l6bMfkyQFMIubWZswdMJBQ\":{\"token\":\"$2a$10$3GhCtlarQfrg8Ghnii68tulYN3XTgf/I0Xi37JpeQ00fJO9pbVw4y\",\"expiry\":1501436012}}"], ["updated_at", "2017-07-16 17:33:32.887584"], ["id", 71]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = $1, "current_sign_in_at" = $2, "last_sign_in_at" = $3, "current_sign_in_ip" = $4, "last_sign_in_ip" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["sign_in_count", 1], ["current_sign_in_at", "2017-07-16 17:33:32.890132"], ["last_sign_in_at", "2017-07-16 17:33:32.890132"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_ip", "127.0.0.1"], ["updated_at", "2017-07-16 17:33:32.890990"], ["id", 71]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[37mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2 FOR UPDATE[0m  [["id", 71], ["LIMIT", 1]]
+  [1m[35mSQL (1.1ms)[0m  [1m[33mUPDATE "users" SET "tokens" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["tokens", "{\"l6bMfkyQFMIubWZswdMJBQ\":{\"token\":\"$2a$10$ygghkNMbq9aUtFqORI2VVesx6v3kLvQXiTly/iU9kLMwh2FCc7Ri.\",\"expiry\":1501436012,\"last_token\":\"$2a$10$3GhCtlarQfrg8Ghnii68tulYN3XTgf/I0Xi37JpeQ00fJO9pbVw4y\",\"updated_at\":\"2017-07-16T19:33:32.991+02:00\"}}"], ["updated_at", "2017-07-16 17:33:32.993117"], ["id", 71]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 207ms (Views: 0.3ms | ActiveRecord: 5.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "mail@mail.com"]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "users" ("uid", "encrypted_password", "email", "tokens", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["uid", "mail@mail.com"], ["encrypted_password", "$2a$04$p4mItkjHkDWUdTzijHtycOuQyTVaZJrMFcQtodlfJpRJIcasc3eca"], ["email", "mail@mail.com"], ["tokens", "{}"], ["created_at", "2017-07-16 17:33:33.003829"], ["updated_at", "2017-07-16 17:33:33.003829"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/api/v1/auth/sign_in" for 127.0.0.1 at 2017-07-16 19:33:33 +0200
+Processing by DeviseTokenAuth::SessionsController#create as JSON
+  Parameters: {"email"=>"mail@mail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (email = 'mail@mail.com' AND provider='email') ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+Completed 401 Unauthorized in 5ms (Views: 0.3ms | ActiveRecord: 0.7ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "mail@mail.com"]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "users" ("uid", "encrypted_password", "email", "tokens", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["uid", "mail@mail.com"], ["encrypted_password", "$2a$04$rCITbECAoIAft1E/XGbAceXq743I4f1YDxDNKPgZir9O9yA.M01o2"], ["email", "mail@mail.com"], ["tokens", "{}"], ["created_at", "2017-07-16 17:33:33.018300"], ["updated_at", "2017-07-16 17:33:33.018300"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/api/v1/auth/sign_in" for 127.0.0.1 at 2017-07-16 19:33:33 +0200
+Processing by DeviseTokenAuth::SessionsController#create as JSON
+  Parameters: {"email"=>"wrong@email.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (email = 'wrong@email.com' AND provider='email') ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+Completed 401 Unauthorized in 3ms (Views: 0.2ms | ActiveRecord: 0.7ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/events/new" for 127.0.0.1 at 2017-07-16 19:33:44 +0200
+Processing by EventsController#new as HTML
+  Rendering events/new.html.haml within layouts/application
+  Rendered events/new.html.haml within layouts/application (174.6ms)
+Completed 200 OK in 232ms (Views: 192.9ms | ActiveRecord: 5.2ms)
+Started POST "/events" for 127.0.0.1 at 2017-07-16 19:33:45 +0200
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "event"=>{"title"=>"Beach Party", "content"=>"Enjoy your summer vacation at Boracay"}, "commit"=>"Save"}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "events" ("title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Beach Party"], ["content", "Enjoy your summer vacation at Boracay"], ["created_at", "2017-07-16 17:33:45.024754"], ["updated_at", "2017-07-16 17:33:45.024754"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/events/new
+Completed 302 Found in 4ms (ActiveRecord: 1.2ms)
+Started GET "/events/new" for 127.0.0.1 at 2017-07-16 19:33:45 +0200
+Processing by EventsController#new as HTML
+  Rendering events/new.html.haml within layouts/application
+  Rendered events/new.html.haml within layouts/application (5.3ms)
+Completed 200 OK in 17ms (Views: 14.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/" for 127.0.0.1 at 2017-07-16 19:33:45 +0200
+Processing by HomeController#index as HTML
+  [1m[36mEvent Load (0.9ms)[0m  [1m[34mSELECT  "events".* FROM "events" ORDER BY "events"."id" DESC LIMIT $1[0m  [["LIMIT", 5]]
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 15ms (Views: 8.5ms | ActiveRecord: 0.9ms)
+Started GET "/users/sign_up" for 127.0.0.1 at 2017-07-16 19:33:45 +0200
+Processing by RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (37.4ms)
+Completed 200 OK in 98ms (Views: 67.4ms | ActiveRecord: 2.9ms)
+Started POST "/users" for 127.0.0.1 at 2017-07-16 19:33:45 +0200
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"user@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (2.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "user@example.com"]]
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "users" ("uid", "encrypted_password", "email", "tokens", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["uid", "user@example.com"], ["encrypted_password", "$2a$04$Zv0CJ3GWdsTZdqVyPUumgeHffoQg.JccJlQpn9Nsr7ZlmNijIKJDW"], ["email", "user@example.com"], ["tokens", "{}"], ["created_at", "2017-07-16 17:33:45.295594"], ["updated_at", "2017-07-16 17:33:45.295594"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = $1, "current_sign_in_at" = $2, "last_sign_in_at" = $3, "current_sign_in_ip" = $4, "last_sign_in_ip" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["sign_in_count", 1], ["current_sign_in_at", "2017-07-16 17:33:45.299282"], ["last_sign_in_at", "2017-07-16 17:33:45.299282"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_ip", "127.0.0.1"], ["updated_at", "2017-07-16 17:33:45.300142"], ["id", 74]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/
+Completed 302 Found in 99ms (ActiveRecord: 5.6ms)
+Started GET "/" for 127.0.0.1 at 2017-07-16 19:33:45 +0200
+Processing by HomeController#index as HTML
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT  "events".* FROM "events" ORDER BY "events"."id" DESC LIMIT $1[0m  [["LIMIT", 5]]
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 13ms (Views: 8.4ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/" for 127.0.0.1 at 2017-07-16 19:33:45 +0200
+Processing by HomeController#index as HTML
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT  "events".* FROM "events" ORDER BY "events"."id" DESC LIMIT $1[0m  [["LIMIT", 5]]
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 17ms (Views: 11.1ms | ActiveRecord: 0.5ms)
+Started GET "/users/sign_up" for 127.0.0.1 at 2017-07-16 19:33:45 +0200
+Processing by RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 33ms (Views: 32.5ms | ActiveRecord: 0.0ms)
+Started POST "/users" for 127.0.0.1 at 2017-07-16 19:33:45 +0200
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", ""]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 56ms (Views: 30.3ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (55.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (29.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (23.4ms)[0m  [1m[32mINSERT INTO "events" ("title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "MyString"], ["content", "MyText"], ["created_at", "2017-07-16 21:44:25.614283"], ["updated_at", "2017-07-16 21:44:25.614283"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (28.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "mail@mail.com"]]
+  [1m[35mSQL (16.2ms)[0m  [1m[32mINSERT INTO "users" ("uid", "encrypted_password", "email", "tokens", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["uid", "mail@mail.com"], ["encrypted_password", "$2a$04$SYvyTEqyWg467SV6M/af7.vxov.GB2TYrhnG.nZCn4V66UUOXwMnS"], ["email", "mail@mail.com"], ["tokens", "{}"], ["created_at", "2017-07-16 21:44:25.702039"], ["updated_at", "2017-07-16 21:44:25.702039"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" IS NULL[0m  [["provider", "email"]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" IS NULL[0m  [["provider", "email"]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" IS NULL[0m  [["provider", "email"]]
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" IS NULL[0m  [["provider", "email"]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "asdf@ ds.com"]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "@example.com"]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "test me @yahoo.com"]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "asdf@example"]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "ddd@.d. .d"]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "ddd@.d"]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "asdf@ds.com"]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "hello@example.uk"]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "test1234@yahoo.si"]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "asdf@example.eu"]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "events" ("title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Beach Party"], ["content", "Enjoy your summer vacation at Boracay"], ["created_at", "2017-07-16 21:44:26.910750"], ["updated_at", "2017-07-16 21:44:26.910750"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/api/v1/events" for 127.0.0.1 at 2017-07-16 23:44:26 +0200
+Processing by Api::V1::EventsController#index as JSON
+  Rendering api/v1/events/index.json.jbuilder
+  [1m[36mEvent Load (16.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered api/v1/events/index.json.jbuilder (51.0ms)
+Could not log "render_template.action_view" event. NoMethodError: undefined method `render_views?' for RSpec::ExampleGroups::ApiV1EventsController::GETV1Events:Class ["/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example_group.rb:732:in `method_missing'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-rails-3.6.0/lib/rspec/rails/view_rendering.rb:71:in `render_template'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/subscriber.rb:95:in `finish'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/log_subscriber.rb:83:in `finish'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/notifications/fanout.rb:102:in `finish'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/notifications/fanout.rb:46:in `block in finish'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/notifications/fanout.rb:46:in `each'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/notifications/fanout.rb:46:in `finish'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/notifications/instrumenter.rb:42:in `finish_with_state'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/notifications/instrumenter.rb:27:in `instrument'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/notifications.rb:164:in `instrument'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionview-5.0.4/lib/action_view/renderer/abstract_renderer.rb:41:in `instrument'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionview-5.0.4/lib/action_view/renderer/template_renderer.rb:53:in `block in render_template'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionview-5.0.4/lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionview-5.0.4/lib/action_view/renderer/template_renderer.rb:52:in `render_template'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionview-5.0.4/lib/action_view/renderer/template_renderer.rb:14:in `render'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionview-5.0.4/lib/action_view/renderer/renderer.rb:42:in `render_template'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionview-5.0.4/lib/action_view/renderer/renderer.rb:23:in `render'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionview-5.0.4/lib/action_view/rendering.rb:104:in `_render_template'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal/streaming.rb:217:in `_render_template'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionview-5.0.4/lib/action_view/rendering.rb:83:in `render_to_body'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal/rendering.rb:52:in `render_to_body'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal/renderers.rb:142:in `render_to_body'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/abstract_controller/rendering.rb:26:in `render'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal/rendering.rb:36:in `render'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/core_ext/benchmark.rb:12:in `block in ms'", "/Users/mac1/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/core_ext/benchmark.rb:12:in `ms'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal/instrumentation.rb:44:in `block in render'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.4/lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal/instrumentation.rb:43:in `render'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal/implicit_render.rb:36:in `default_render'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/abstract_controller/base.rb:188:in `process_action'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal/rendering.rb:30:in `process_action'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/abstract_controller/callbacks.rb:20:in `block in process_action'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/callbacks.rb:126:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/callbacks.rb:506:in `block (2 levels) in compile'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/callbacks.rb:455:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/callbacks.rb:101:in `__run_callbacks__'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/callbacks.rb:90:in `run_callbacks'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/abstract_controller/callbacks.rb:19:in `process_action'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal/rescue.rb:20:in `process_action'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/notifications.rb:164:in `block in instrument'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/notifications/instrumenter.rb:21:in `instrument'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/notifications.rb:164:in `instrument'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal/instrumentation.rb:30:in `process_action'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal/params_wrapper.rb:248:in `process_action'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.4/lib/active_record/railties/controller_runtime.rb:18:in `process_action'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/abstract_controller/base.rb:126:in `process'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionview-5.0.4/lib/action_view/rendering.rb:30:in `process'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal.rb:190:in `dispatch'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal.rb:262:in `dispatch'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/routing/route_set.rb:50:in `dispatch'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/routing/route_set.rb:32:in `serve'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/journey/router.rb:39:in `block in serve'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/journey/router.rb:26:in `each'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/journey/router.rb:26:in `serve'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/routing/route_set.rb:725:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rack-cors-1.0.0/lib/rack/cors.rb:93:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/warden-1.2.7/lib/warden/manager.rb:36:in `block in call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/warden-1.2.7/lib/warden/manager.rb:35:in `catch'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/warden-1.2.7/lib/warden/manager.rb:35:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rack-2.0.3/lib/rack/etag.rb:25:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rack-2.0.3/lib/rack/conditional_get.rb:25:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rack-2.0.3/lib/rack/head.rb:12:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rack-2.0.3/lib/rack/session/abstract/id.rb:232:in `context'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rack-2.0.3/lib/rack/session/abstract/id.rb:226:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/middleware/cookies.rb:613:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/callbacks.rb:97:in `__run_callbacks__'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/callbacks.rb:750:in `_run_call_callbacks'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/callbacks.rb:90:in `run_callbacks'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/middleware/callbacks.rb:36:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/railties-5.0.4/lib/rails/rack/logger.rb:36:in `call_app'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/railties-5.0.4/lib/rails/rack/logger.rb:24:in `block in call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/tagged_logging.rb:69:in `block in tagged'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/tagged_logging.rb:26:in `tagged'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/tagged_logging.rb:69:in `tagged'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/railties-5.0.4/lib/rails/rack/logger.rb:24:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/middleware/request_id.rb:24:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/middleware/executor.rb:12:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/middleware/static.rb:136:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rack-cors-1.0.0/lib/rack/cors.rb:93:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/railties-5.0.4/lib/rails/engine.rb:522:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rack-test-0.6.3/lib/rack/mock_session.rb:30:in `request'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rack-test-0.6.3/lib/rack/test.rb:244:in `process_request'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rack-test-0.6.3/lib/rack/test.rb:124:in `request'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/testing/integration.rb:334:in `process'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/testing/integration.rb:364:in `process_with_kwargs'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/testing/integration.rb:15:in `get'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/testing/integration.rb:442:in `block (2 levels) in <module:Runner>'", "/Users/mac1/Projects/adventurers_hub_backend/spec/requests/api/v1/events_spec.rb:10:in `block (3 levels) in <top (required)>'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example.rb:254:in `instance_exec'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example.rb:254:in `block in run'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example.rb:500:in `block in with_around_and_singleton_context_hooks'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example.rb:457:in `block in with_around_example_hooks'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/hooks.rb:464:in `block in run'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/hooks.rb:604:in `block in run_around_example_hooks_for'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example.rb:342:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-rails-3.6.0/lib/rspec/rails/adapters.rb:127:in `block (2 levels) in <module:MinitestLifecycleAdapter>'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example.rb:447:in `instance_exec'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example.rb:447:in `instance_exec'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/hooks.rb:375:in `execute_with'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/hooks.rb:606:in `block (2 levels) in run_around_example_hooks_for'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example.rb:342:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/hooks.rb:607:in `run_around_example_hooks_for'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/hooks.rb:464:in `run'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example.rb:457:in `with_around_example_hooks'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example.rb:500:in `with_around_and_singleton_context_hooks'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example.rb:251:in `run'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example_group.rb:627:in `block in run_examples'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example_group.rb:623:in `map'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example_group.rb:623:in `run_examples'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example_group.rb:589:in `run'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example_group.rb:590:in `block in run'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example_group.rb:590:in `map'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example_group.rb:590:in `run'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/runner.rb:118:in `block (3 levels) in run_specs'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/runner.rb:118:in `map'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/runner.rb:118:in `block (2 levels) in run_specs'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/configuration.rb:1894:in `with_suite_hooks'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/runner.rb:113:in `block in run_specs'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/reporter.rb:79:in `report'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/runner.rb:112:in `run_specs'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/runner.rb:87:in `run'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/runner.rb:71:in `run'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/runner.rb:45:in `invoke'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/exe/rspec:4:in `<top (required)>'", "/Users/mac1/.rvm/gems/ruby-2.3.1/bin/rspec:23:in `load'", "/Users/mac1/.rvm/gems/ruby-2.3.1/bin/rspec:23:in `<main>'", "/Users/mac1/.rvm/gems/ruby-2.3.1/bin/ruby_executable_hooks:15:in `eval'", "/Users/mac1/.rvm/gems/ruby-2.3.1/bin/ruby_executable_hooks:15:in `<main>'"]
+Completed 200 OK in 155ms (Views: 105.5ms | ActiveRecord: 16.5ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-07-16 23:44:27 +0200
+Processing by DeviseTokenAuth::RegistrationsController#create as JSON
+  Parameters: {"email"=>"mail@mail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "mail@mail.com"]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "users" ("uid", "encrypted_password", "email", "tokens", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["uid", "mail@mail.com"], ["encrypted_password", "$2a$04$SfVqh1UXiYR8WZhRUDt1J.ctgwRijPUhnvvjtesdyiXXPsFIv4Lhu"], ["email", "mail@mail.com"], ["tokens", "{}"], ["created_at", "2017-07-16 21:44:27.361162"], ["updated_at", "2017-07-16 21:44:27.361162"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (13.2ms)[0m  [1m[33mUPDATE "users" SET "tokens" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["tokens", "{\"WXyG31lNbfczK285VtOsTg\":{\"token\":\"$2a$10$YOzVyuztTIUpzHGudiv2Bu61mQ8t6kZH7jSoxaEQ7fQQogn/uogY.\",\"expiry\":1501451067}}"], ["updated_at", "2017-07-16 21:44:27.449790"], ["id", 76]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (30.8ms)[0m  [1m[37mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2 FOR UPDATE[0m  [["id", 76], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "users" SET "tokens" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["tokens", "{\"WXyG31lNbfczK285VtOsTg\":{\"token\":\"$2a$10$TYJjVzKYkX1ZxBZECJkga.K9PVhP..r62d5mHfTlwRtBt9aCa8h0q\",\"expiry\":1501451067,\"last_token\":\"$2a$10$YOzVyuztTIUpzHGudiv2Bu61mQ8t6kZH7jSoxaEQ7fQQogn/uogY.\",\"updated_at\":\"2017-07-16T23:44:27.586+02:00\"}}"], ["updated_at", "2017-07-16 21:44:27.587948"], ["id", 76]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 282ms (Views: 0.4ms | ActiveRecord: 46.8ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-07-16 23:44:27 +0200
+Processing by DeviseTokenAuth::RegistrationsController#create as JSON
+  Parameters: {"email"=>"mail@mail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "mail@mail.com"]]
+  [1m[35m (20.4ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 422 Unprocessable Entity in 29ms (Views: 0.4ms | ActiveRecord: 21.8ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-07-16 23:44:27 +0200
+Processing by DeviseTokenAuth::RegistrationsController#create as JSON
+  Parameters: {"email"=>"mail@mail", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "mail@mail"]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 422 Unprocessable Entity in 7ms (Views: 0.4ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "example@gmail.com"]]
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "users" ("uid", "encrypted_password", "email", "tokens", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["uid", "example@gmail.com"], ["encrypted_password", "$2a$04$zvH3oRBSG24vue9jZPLrx.RflGkxVKZ.rMhn/KHn55I6Au/SiaM1K"], ["email", "example@gmail.com"], ["tokens", "{}"], ["created_at", "2017-07-16 21:44:27.643068"], ["updated_at", "2017-07-16 21:44:27.643068"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-07-16 23:44:27 +0200
+Processing by DeviseTokenAuth::RegistrationsController#create as JSON
+  Parameters: {"email"=>"example@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "example@gmail.com"]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 422 Unprocessable Entity in 8ms (Views: 0.6ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "mail@mail.com"]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "users" ("uid", "encrypted_password", "email", "tokens", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["uid", "mail@mail.com"], ["encrypted_password", "$2a$04$7Sycl4JtZMTsaVMTrc4/ZutyKvuMcjLkbZ9SEJmQxI5BhZVME1Ttu"], ["email", "mail@mail.com"], ["tokens", "{}"], ["created_at", "2017-07-16 21:44:27.662824"], ["updated_at", "2017-07-16 21:44:27.662824"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/api/v1/auth/sign_in" for 127.0.0.1 at 2017-07-16 23:44:27 +0200
+Processing by DeviseTokenAuth::SessionsController#create as JSON
+  Parameters: {"email"=>"mail@mail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (email = 'mail@mail.com' AND provider='email') ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "users" SET "tokens" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["tokens", "{\"H8J7Bkr3du7aQdIK2WkZzw\":{\"token\":\"$2a$10$uwSN.Hmky1aXWwJHZmQaeu3Bw6egI4hpn2AoSvorvqvnNJZnapa3O\",\"expiry\":1501451067}}"], ["updated_at", "2017-07-16 21:44:27.818849"], ["id", 78]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = $1, "current_sign_in_at" = $2, "last_sign_in_at" = $3, "current_sign_in_ip" = $4, "last_sign_in_ip" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["sign_in_count", 1], ["current_sign_in_at", "2017-07-16 21:44:27.821334"], ["last_sign_in_at", "2017-07-16 21:44:27.821334"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_ip", "127.0.0.1"], ["updated_at", "2017-07-16 21:44:27.822216"], ["id", 78]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (1.1ms)[0m  [1m[37mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2 FOR UPDATE[0m  [["id", 78], ["LIMIT", 1]]
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE "users" SET "tokens" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["tokens", "{\"H8J7Bkr3du7aQdIK2WkZzw\":{\"token\":\"$2a$10$ZBmXHRixqX8F9Z7NXSpureFjXGWxgLK7.f.Jw7TNfNVXktRmJ.sMS\",\"expiry\":1501451067,\"last_token\":\"$2a$10$uwSN.Hmky1aXWwJHZmQaeu3Bw6egI4hpn2AoSvorvqvnNJZnapa3O\",\"updated_at\":\"2017-07-16T23:44:27.915+02:00\"}}"], ["updated_at", "2017-07-16 21:44:27.917065"], ["id", 78]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 204ms (Views: 0.7ms | ActiveRecord: 5.3ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "mail@mail.com"]]
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "users" ("uid", "encrypted_password", "email", "tokens", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["uid", "mail@mail.com"], ["encrypted_password", "$2a$04$uWzAitKRHk.0Ayy8uwMZSO4dLS1dW4XtkEmQ6e0aX1r/AtwrnzCUG"], ["email", "mail@mail.com"], ["tokens", "{}"], ["created_at", "2017-07-16 21:44:27.931644"], ["updated_at", "2017-07-16 21:44:27.931644"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/api/v1/auth/sign_in" for 127.0.0.1 at 2017-07-16 23:44:27 +0200
+Processing by DeviseTokenAuth::SessionsController#create as JSON
+  Parameters: {"email"=>"mail@mail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (email = 'mail@mail.com' AND provider='email') ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+Completed 401 Unauthorized in 7ms (Views: 0.2ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "mail@mail.com"]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "users" ("uid", "encrypted_password", "email", "tokens", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["uid", "mail@mail.com"], ["encrypted_password", "$2a$04$n/R5Y7bCr0QM6RhXPPwp.eSO3L/exjkTO8m.LpJOsNd9T17DyWi.a"], ["email", "mail@mail.com"], ["tokens", "{}"], ["created_at", "2017-07-16 21:44:27.963609"], ["updated_at", "2017-07-16 21:44:27.963609"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/api/v1/auth/sign_in" for 127.0.0.1 at 2017-07-16 23:44:27 +0200
+Processing by DeviseTokenAuth::SessionsController#create as JSON
+  Parameters: {"email"=>"wrong@email.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (email = 'wrong@email.com' AND provider='email') ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+Completed 401 Unauthorized in 3ms (Views: 0.2ms | ActiveRecord: 0.7ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (27.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (8.4ms)[0m  [1m[32mINSERT INTO "events" ("title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "MyString"], ["content", "MyText"], ["created_at", "2017-07-17 18:57:59.326367"], ["updated_at", "2017-07-17 18:57:59.326367"]]
+  [1m[35m (0.5ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (28.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "mail@mail.com"]]
+  [1m[35mSQL (15.2ms)[0m  [1m[32mINSERT INTO "users" ("uid", "encrypted_password", "email", "tokens", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["uid", "mail@mail.com"], ["encrypted_password", "$2a$04$7un0.b68fe0PyjPF2baHN.5gya0GiO1MUfWR6KYs0rJTapem2wblq"], ["email", "mail@mail.com"], ["tokens", "{}"], ["created_at", "2017-07-17 18:57:59.411402"], ["updated_at", "2017-07-17 18:57:59.411402"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" IS NULL[0m  [["provider", "email"]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" IS NULL[0m  [["provider", "email"]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" IS NULL[0m  [["provider", "email"]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" IS NULL[0m  [["provider", "email"]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "asdf@ ds.com"]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "@example.com"]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "test me @yahoo.com"]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "asdf@example"]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "ddd@.d. .d"]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "ddd@.d"]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "asdf@ds.com"]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "hello@example.uk"]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "test1234@yahoo.si"]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "asdf@example.eu"]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "events" ("title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Beach Party"], ["content", "Enjoy your summer vacation at Boracay"], ["created_at", "2017-07-17 18:58:00.576781"], ["updated_at", "2017-07-17 18:58:00.576781"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/api/v1/events" for 127.0.0.1 at 2017-07-17 20:58:00 +0200
+Processing by Api::V1::EventsController#index as JSON
+  Rendering api/v1/events/index.json.jbuilder
+  [1m[36mEvent Load (14.4ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered api/v1/events/index.json.jbuilder (38.6ms)
+Could not log "render_template.action_view" event. NoMethodError: undefined method `render_views?' for RSpec::ExampleGroups::ApiV1EventsController::GETV1Events:Class ["/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example_group.rb:732:in `method_missing'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-rails-3.6.0/lib/rspec/rails/view_rendering.rb:71:in `render_template'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/subscriber.rb:95:in `finish'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/log_subscriber.rb:83:in `finish'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/notifications/fanout.rb:102:in `finish'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/notifications/fanout.rb:46:in `block in finish'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/notifications/fanout.rb:46:in `each'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/notifications/fanout.rb:46:in `finish'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/notifications/instrumenter.rb:42:in `finish_with_state'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/notifications/instrumenter.rb:27:in `instrument'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/notifications.rb:164:in `instrument'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionview-5.0.4/lib/action_view/renderer/abstract_renderer.rb:41:in `instrument'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionview-5.0.4/lib/action_view/renderer/template_renderer.rb:53:in `block in render_template'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionview-5.0.4/lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionview-5.0.4/lib/action_view/renderer/template_renderer.rb:52:in `render_template'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionview-5.0.4/lib/action_view/renderer/template_renderer.rb:14:in `render'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionview-5.0.4/lib/action_view/renderer/renderer.rb:42:in `render_template'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionview-5.0.4/lib/action_view/renderer/renderer.rb:23:in `render'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionview-5.0.4/lib/action_view/rendering.rb:104:in `_render_template'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal/streaming.rb:217:in `_render_template'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionview-5.0.4/lib/action_view/rendering.rb:83:in `render_to_body'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal/rendering.rb:52:in `render_to_body'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal/renderers.rb:142:in `render_to_body'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/abstract_controller/rendering.rb:26:in `render'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal/rendering.rb:36:in `render'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/core_ext/benchmark.rb:12:in `block in ms'", "/Users/mac1/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/core_ext/benchmark.rb:12:in `ms'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal/instrumentation.rb:44:in `block in render'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.4/lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal/instrumentation.rb:43:in `render'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal/implicit_render.rb:36:in `default_render'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/abstract_controller/base.rb:188:in `process_action'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal/rendering.rb:30:in `process_action'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/abstract_controller/callbacks.rb:20:in `block in process_action'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/callbacks.rb:126:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/callbacks.rb:506:in `block (2 levels) in compile'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/callbacks.rb:455:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/callbacks.rb:101:in `__run_callbacks__'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/callbacks.rb:90:in `run_callbacks'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/abstract_controller/callbacks.rb:19:in `process_action'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal/rescue.rb:20:in `process_action'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/notifications.rb:164:in `block in instrument'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/notifications/instrumenter.rb:21:in `instrument'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/notifications.rb:164:in `instrument'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal/instrumentation.rb:30:in `process_action'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal/params_wrapper.rb:248:in `process_action'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.4/lib/active_record/railties/controller_runtime.rb:18:in `process_action'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/abstract_controller/base.rb:126:in `process'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionview-5.0.4/lib/action_view/rendering.rb:30:in `process'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal.rb:190:in `dispatch'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal.rb:262:in `dispatch'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/routing/route_set.rb:50:in `dispatch'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/routing/route_set.rb:32:in `serve'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/journey/router.rb:39:in `block in serve'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/journey/router.rb:26:in `each'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/journey/router.rb:26:in `serve'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/routing/route_set.rb:725:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rack-cors-1.0.0/lib/rack/cors.rb:93:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/warden-1.2.7/lib/warden/manager.rb:36:in `block in call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/warden-1.2.7/lib/warden/manager.rb:35:in `catch'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/warden-1.2.7/lib/warden/manager.rb:35:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rack-2.0.3/lib/rack/etag.rb:25:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rack-2.0.3/lib/rack/conditional_get.rb:25:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rack-2.0.3/lib/rack/head.rb:12:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rack-2.0.3/lib/rack/session/abstract/id.rb:232:in `context'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rack-2.0.3/lib/rack/session/abstract/id.rb:226:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/middleware/cookies.rb:613:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/callbacks.rb:97:in `__run_callbacks__'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/callbacks.rb:750:in `_run_call_callbacks'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/callbacks.rb:90:in `run_callbacks'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/middleware/callbacks.rb:36:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/railties-5.0.4/lib/rails/rack/logger.rb:36:in `call_app'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/railties-5.0.4/lib/rails/rack/logger.rb:24:in `block in call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/tagged_logging.rb:69:in `block in tagged'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/tagged_logging.rb:26:in `tagged'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/tagged_logging.rb:69:in `tagged'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/railties-5.0.4/lib/rails/rack/logger.rb:24:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/middleware/request_id.rb:24:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/middleware/executor.rb:12:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/middleware/static.rb:136:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rack-cors-1.0.0/lib/rack/cors.rb:93:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/railties-5.0.4/lib/rails/engine.rb:522:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rack-test-0.6.3/lib/rack/mock_session.rb:30:in `request'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rack-test-0.6.3/lib/rack/test.rb:244:in `process_request'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rack-test-0.6.3/lib/rack/test.rb:124:in `request'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/testing/integration.rb:334:in `process'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/testing/integration.rb:364:in `process_with_kwargs'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/testing/integration.rb:15:in `get'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/testing/integration.rb:442:in `block (2 levels) in <module:Runner>'", "/Users/mac1/Projects/adventurers_hub_backend/spec/requests/api/v1/events_spec.rb:10:in `block (3 levels) in <top (required)>'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example.rb:254:in `instance_exec'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example.rb:254:in `block in run'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example.rb:500:in `block in with_around_and_singleton_context_hooks'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example.rb:457:in `block in with_around_example_hooks'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/hooks.rb:464:in `block in run'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/hooks.rb:604:in `block in run_around_example_hooks_for'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example.rb:342:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-rails-3.6.0/lib/rspec/rails/adapters.rb:127:in `block (2 levels) in <module:MinitestLifecycleAdapter>'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example.rb:447:in `instance_exec'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example.rb:447:in `instance_exec'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/hooks.rb:375:in `execute_with'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/hooks.rb:606:in `block (2 levels) in run_around_example_hooks_for'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example.rb:342:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/hooks.rb:607:in `run_around_example_hooks_for'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/hooks.rb:464:in `run'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example.rb:457:in `with_around_example_hooks'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example.rb:500:in `with_around_and_singleton_context_hooks'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example.rb:251:in `run'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example_group.rb:627:in `block in run_examples'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example_group.rb:623:in `map'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example_group.rb:623:in `run_examples'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example_group.rb:589:in `run'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example_group.rb:590:in `block in run'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example_group.rb:590:in `map'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example_group.rb:590:in `run'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/runner.rb:118:in `block (3 levels) in run_specs'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/runner.rb:118:in `map'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/runner.rb:118:in `block (2 levels) in run_specs'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/configuration.rb:1894:in `with_suite_hooks'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/runner.rb:113:in `block in run_specs'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/reporter.rb:79:in `report'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/runner.rb:112:in `run_specs'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/runner.rb:87:in `run'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/runner.rb:71:in `run'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/runner.rb:45:in `invoke'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/exe/rspec:4:in `<main>'"]
+Completed 200 OK in 141ms (Views: 84.8ms | ActiveRecord: 14.4ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-07-17 20:58:00 +0200
+Processing by DeviseTokenAuth::RegistrationsController#create as JSON
+  Parameters: {"email"=>"mail@mail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "mail@mail.com"]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "users" ("uid", "encrypted_password", "email", "tokens", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["uid", "mail@mail.com"], ["encrypted_password", "$2a$04$bvnBkxUH3BEssi4zPGAA9eB9mT7AK89xyVOU.LwMOrbHuQCTNQ3Ka"], ["email", "mail@mail.com"], ["tokens", "{}"], ["created_at", "2017-07-17 18:58:01.055082"], ["updated_at", "2017-07-17 18:58:01.055082"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "users" SET "tokens" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["tokens", "{\"BdRDTo34Sqy1xJ-VLdFYPA\":{\"token\":\"$2a$10$w/5TSiGrr09kLDYy.r.PjOQLYLFTOsi/I8z0PLPzK/QIeuJcw.0YW\",\"expiry\":1501527481}}"], ["updated_at", "2017-07-17 18:58:01.148014"], ["id", 82]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (20.5ms)[0m  [1m[37mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2 FOR UPDATE[0m  [["id", 82], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "users" SET "tokens" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["tokens", "{\"BdRDTo34Sqy1xJ-VLdFYPA\":{\"token\":\"$2a$10$/7Il2KRivt54bo7QUGlU1uH65b4MIfClghdZ6GVqFxpmw7mChuU12\",\"expiry\":1501527481,\"last_token\":\"$2a$10$w/5TSiGrr09kLDYy.r.PjOQLYLFTOsi/I8z0PLPzK/QIeuJcw.0YW\",\"updated_at\":\"2017-07-17T20:58:01.266+02:00\"}}"], ["updated_at", "2017-07-17 18:58:01.267745"], ["id", 82]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 273ms (Views: 0.4ms | ActiveRecord: 24.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-07-17 20:58:01 +0200
+Processing by DeviseTokenAuth::RegistrationsController#create as JSON
+  Parameters: {"email"=>"mail@mail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "mail@mail.com"]]
+  [1m[35m (7.0ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 422 Unprocessable Entity in 16ms (Views: 0.7ms | ActiveRecord: 7.8ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-07-17 20:58:01 +0200
+Processing by DeviseTokenAuth::RegistrationsController#create as JSON
+  Parameters: {"email"=>"mail@mail", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "mail@mail"]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 422 Unprocessable Entity in 8ms (Views: 0.4ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "example@gmail.com"]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "users" ("uid", "encrypted_password", "email", "tokens", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["uid", "example@gmail.com"], ["encrypted_password", "$2a$04$cc/7Xw8QebVp4eAjsT/oAu/Jy8YToNAELdqUGGyqMvehN1bxZN156"], ["email", "example@gmail.com"], ["tokens", "{}"], ["created_at", "2017-07-17 18:58:01.310922"], ["updated_at", "2017-07-17 18:58:01.310922"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-07-17 20:58:01 +0200
+Processing by DeviseTokenAuth::RegistrationsController#create as JSON
+  Parameters: {"email"=>"example@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "example@gmail.com"]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 422 Unprocessable Entity in 7ms (Views: 0.4ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "mail@mail.com"]]
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "users" ("uid", "encrypted_password", "email", "tokens", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["uid", "mail@mail.com"], ["encrypted_password", "$2a$04$pomVzcKKLl7g0KCw1ra4Z.ga1Wo8d0/YyUNd9WzW5r4DDa2aTWkQW"], ["email", "mail@mail.com"], ["tokens", "{}"], ["created_at", "2017-07-17 18:58:01.329705"], ["updated_at", "2017-07-17 18:58:01.329705"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/api/v1/auth/sign_in" for 127.0.0.1 at 2017-07-17 20:58:01 +0200
+Processing by DeviseTokenAuth::SessionsController#create as JSON
+  Parameters: {"email"=>"mail@mail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (email = 'mail@mail.com' AND provider='email') ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "users" SET "tokens" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["tokens", "{\"EYWcVgHdXR2vCziz3_3_ng\":{\"token\":\"$2a$10$aV6in.m3gUwiTGoDKlB2AeBuGTMhKFtJdLfcf7VijKfBTTRMFO9IC\",\"expiry\":1501527481}}"], ["updated_at", "2017-07-17 18:58:01.474618"], ["id", 84]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = $1, "current_sign_in_at" = $2, "last_sign_in_at" = $3, "current_sign_in_ip" = $4, "last_sign_in_ip" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["sign_in_count", 1], ["current_sign_in_at", "2017-07-17 18:58:01.477173"], ["last_sign_in_at", "2017-07-17 18:58:01.477173"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_ip", "127.0.0.1"], ["updated_at", "2017-07-17 18:58:01.479106"], ["id", 84]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[37mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2 FOR UPDATE[0m  [["id", 84], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "users" SET "tokens" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["tokens", "{\"EYWcVgHdXR2vCziz3_3_ng\":{\"token\":\"$2a$10$A1Zai.KOsvAktKKEQyYAOORkS0d/2oceL/HXVtRab39EmmQLWkOse\",\"expiry\":1501527481,\"last_token\":\"$2a$10$aV6in.m3gUwiTGoDKlB2AeBuGTMhKFtJdLfcf7VijKfBTTRMFO9IC\",\"updated_at\":\"2017-07-17T20:58:01.569+02:00\"}}"], ["updated_at", "2017-07-17 18:58:01.570163"], ["id", 84]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 188ms (Views: 0.5ms | ActiveRecord: 5.1ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "mail@mail.com"]]
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "users" ("uid", "encrypted_password", "email", "tokens", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["uid", "mail@mail.com"], ["encrypted_password", "$2a$04$3yKALM.w9Lq7uXYkJso3GurQDKb.CaJtq5mzjPqSJNwUa7mFM8HMW"], ["email", "mail@mail.com"], ["tokens", "{}"], ["created_at", "2017-07-17 18:58:01.581762"], ["updated_at", "2017-07-17 18:58:01.581762"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/api/v1/auth/sign_in" for 127.0.0.1 at 2017-07-17 20:58:01 +0200
+Processing by DeviseTokenAuth::SessionsController#create as JSON
+  Parameters: {"email"=>"mail@mail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (email = 'mail@mail.com' AND provider='email') ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+Completed 401 Unauthorized in 5ms (Views: 0.3ms | ActiveRecord: 0.7ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "mail@mail.com"]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "users" ("uid", "encrypted_password", "email", "tokens", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["uid", "mail@mail.com"], ["encrypted_password", "$2a$04$pEubnnG9Qa2fDsxC9Kp.IezUDV6xElxA0FfWhTrDP86Ozr0GN.EXO"], ["email", "mail@mail.com"], ["tokens", "{}"], ["created_at", "2017-07-17 18:58:01.596821"], ["updated_at", "2017-07-17 18:58:01.596821"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/api/v1/auth/sign_in" for 127.0.0.1 at 2017-07-17 20:58:01 +0200
+Processing by DeviseTokenAuth::SessionsController#create as JSON
+  Parameters: {"email"=>"wrong@email.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (email = 'wrong@email.com' AND provider='email') ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+Completed 401 Unauthorized in 3ms (Views: 0.2ms | ActiveRecord: 0.7ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (14.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/events/new" for 127.0.0.1 at 2017-07-17 20:58:10 +0200
+Processing by EventsController#new as HTML
+  Rendering events/new.html.haml within layouts/application
+  Rendered events/new.html.haml within layouts/application (198.0ms)
+Completed 200 OK in 290ms (Views: 217.1ms | ActiveRecord: 33.2ms)
+Started POST "/events" for 127.0.0.1 at 2017-07-17 20:58:11 +0200
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "event"=>{"title"=>"Beach Party", "content"=>"Enjoy your summer vacation at Boracay"}, "commit"=>"Save"}
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (17.5ms)[0m  [1m[32mINSERT INTO "events" ("title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Beach Party"], ["content", "Enjoy your summer vacation at Boracay"], ["created_at", "2017-07-17 18:58:11.358555"], ["updated_at", "2017-07-17 18:58:11.358555"]]
+  [1m[35m (0.4ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/events/new
+Completed 302 Found in 23ms (ActiveRecord: 18.1ms)
+Started GET "/events/new" for 127.0.0.1 at 2017-07-17 20:58:11 +0200
+Processing by EventsController#new as HTML
+  Rendering events/new.html.haml within layouts/application
+  Rendered events/new.html.haml within layouts/application (4.6ms)
+Completed 200 OK in 18ms (Views: 14.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/" for 127.0.0.1 at 2017-07-17 20:58:11 +0200
+Processing by HomeController#index as HTML
+  [1m[36mEvent Load (8.8ms)[0m  [1m[34mSELECT  "events".* FROM "events" ORDER BY "events"."id" DESC LIMIT $1[0m  [["LIMIT", 5]]
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 27ms (Views: 11.7ms | ActiveRecord: 8.8ms)
+Started GET "/users/sign_up" for 127.0.0.1 at 2017-07-17 20:58:11 +0200
+Processing by RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (41.9ms)
+Completed 200 OK in 101ms (Views: 76.6ms | ActiveRecord: 2.2ms)
+Started POST "/users" for 127.0.0.1 at 2017-07-17 20:58:11 +0200
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"user@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (21.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "user@example.com"]]
+  [1m[35mSQL (19.8ms)[0m  [1m[32mINSERT INTO "users" ("uid", "encrypted_password", "email", "tokens", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["uid", "user@example.com"], ["encrypted_password", "$2a$04$FLaars1dLCvnSiRru9AXIec3qV2zbfHjeof1nQ.PSfU8KI170OZcO"], ["email", "user@example.com"], ["tokens", "{}"], ["created_at", "2017-07-17 18:58:11.678566"], ["updated_at", "2017-07-17 18:58:11.678566"]]
+  [1m[35m (0.4ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = $1, "current_sign_in_at" = $2, "last_sign_in_at" = $3, "current_sign_in_ip" = $4, "last_sign_in_ip" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["sign_in_count", 1], ["current_sign_in_at", "2017-07-17 18:58:11.702638"], ["last_sign_in_at", "2017-07-17 18:58:11.702638"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_ip", "127.0.0.1"], ["updated_at", "2017-07-17 18:58:11.704081"], ["id", 87]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/
+Completed 302 Found in 141ms (ActiveRecord: 42.8ms)
+Started GET "/" for 127.0.0.1 at 2017-07-17 20:58:11 +0200
+Processing by HomeController#index as HTML
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT  "events".* FROM "events" ORDER BY "events"."id" DESC LIMIT $1[0m  [["LIMIT", 5]]
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 13ms (Views: 8.3ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/" for 127.0.0.1 at 2017-07-17 20:58:11 +0200
+Processing by HomeController#index as HTML
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT  "events".* FROM "events" ORDER BY "events"."id" DESC LIMIT $1[0m  [["LIMIT", 5]]
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 15ms (Views: 11.3ms | ActiveRecord: 0.4ms)
+Started GET "/users/sign_up" for 127.0.0.1 at 2017-07-17 20:58:11 +0200
+Processing by RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 34ms (Views: 33.1ms | ActiveRecord: 0.0ms)
+Started POST "/users" for 127.0.0.1 at 2017-07-17 20:58:11 +0200
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", ""]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 60ms (Views: 36.1ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (63.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (30.6ms)[0m  [1m[32mINSERT INTO "events" ("title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "MyString"], ["content", "MyText"], ["created_at", "2017-07-17 19:56:14.415790"], ["updated_at", "2017-07-17 19:56:14.415790"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (47.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "user@random.com"]]
+  [1m[35mSQL (16.3ms)[0m  [1m[32mINSERT INTO "users" ("uid", "encrypted_password", "email", "tokens", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["uid", "user@random.com"], ["encrypted_password", "$2a$04$geS6er0fG5G8XXOHY34d0e5P.R7yTtIusZdHx64Dwn49cMAAneIKS"], ["email", "user@random.com"], ["tokens", "{}"], ["created_at", "2017-07-17 19:56:14.533319"], ["updated_at", "2017-07-17 19:56:14.533319"]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" IS NULL[0m  [["provider", "email"]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" IS NULL[0m  [["provider", "email"]]
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" IS NULL[0m  [["provider", "email"]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" IS NULL[0m  [["provider", "email"]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "asdf@ ds.com"]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "@example.com"]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "test me @yahoo.com"]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "asdf@example"]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "ddd@.d. .d"]]
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "ddd@.d"]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "asdf@ds.com"]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "hello@example.uk"]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "test1234@yahoo.si"]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "asdf@example.eu"]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.7ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "events" ("title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Beach Party"], ["content", "Enjoy your summer vacation at Boracay"], ["created_at", "2017-07-17 19:56:15.709472"], ["updated_at", "2017-07-17 19:56:15.709472"]]
+  [1m[35m (0.4ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/api/v1/events" for 127.0.0.1 at 2017-07-17 21:56:15 +0200
+Processing by Api::V1::EventsController#index as JSON
+  Rendering api/v1/events/index.json.jbuilder
+  [1m[36mEvent Load (19.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered api/v1/events/index.json.jbuilder (43.8ms)
+Could not log "render_template.action_view" event. NoMethodError: undefined method `render_views?' for RSpec::ExampleGroups::ApiV1EventsController::GETV1Events:Class ["/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example_group.rb:732:in `method_missing'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-rails-3.6.0/lib/rspec/rails/view_rendering.rb:71:in `render_template'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/subscriber.rb:95:in `finish'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/log_subscriber.rb:83:in `finish'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/notifications/fanout.rb:102:in `finish'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/notifications/fanout.rb:46:in `block in finish'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/notifications/fanout.rb:46:in `each'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/notifications/fanout.rb:46:in `finish'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/notifications/instrumenter.rb:42:in `finish_with_state'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/notifications/instrumenter.rb:27:in `instrument'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/notifications.rb:164:in `instrument'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionview-5.0.4/lib/action_view/renderer/abstract_renderer.rb:41:in `instrument'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionview-5.0.4/lib/action_view/renderer/template_renderer.rb:53:in `block in render_template'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionview-5.0.4/lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionview-5.0.4/lib/action_view/renderer/template_renderer.rb:52:in `render_template'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionview-5.0.4/lib/action_view/renderer/template_renderer.rb:14:in `render'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionview-5.0.4/lib/action_view/renderer/renderer.rb:42:in `render_template'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionview-5.0.4/lib/action_view/renderer/renderer.rb:23:in `render'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionview-5.0.4/lib/action_view/rendering.rb:104:in `_render_template'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal/streaming.rb:217:in `_render_template'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionview-5.0.4/lib/action_view/rendering.rb:83:in `render_to_body'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal/rendering.rb:52:in `render_to_body'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal/renderers.rb:142:in `render_to_body'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/abstract_controller/rendering.rb:26:in `render'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal/rendering.rb:36:in `render'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/core_ext/benchmark.rb:12:in `block in ms'", "/Users/mac1/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/core_ext/benchmark.rb:12:in `ms'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal/instrumentation.rb:44:in `block in render'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.4/lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal/instrumentation.rb:43:in `render'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal/implicit_render.rb:36:in `default_render'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/abstract_controller/base.rb:188:in `process_action'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal/rendering.rb:30:in `process_action'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/abstract_controller/callbacks.rb:20:in `block in process_action'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/callbacks.rb:126:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/callbacks.rb:506:in `block (2 levels) in compile'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/callbacks.rb:455:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/callbacks.rb:101:in `__run_callbacks__'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/callbacks.rb:90:in `run_callbacks'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/abstract_controller/callbacks.rb:19:in `process_action'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal/rescue.rb:20:in `process_action'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/notifications.rb:164:in `block in instrument'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/notifications/instrumenter.rb:21:in `instrument'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/notifications.rb:164:in `instrument'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal/instrumentation.rb:30:in `process_action'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal/params_wrapper.rb:248:in `process_action'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.4/lib/active_record/railties/controller_runtime.rb:18:in `process_action'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/abstract_controller/base.rb:126:in `process'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionview-5.0.4/lib/action_view/rendering.rb:30:in `process'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal.rb:190:in `dispatch'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_controller/metal.rb:262:in `dispatch'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/routing/route_set.rb:50:in `dispatch'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/routing/route_set.rb:32:in `serve'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/journey/router.rb:39:in `block in serve'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/journey/router.rb:26:in `each'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/journey/router.rb:26:in `serve'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/routing/route_set.rb:725:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rack-cors-1.0.0/lib/rack/cors.rb:93:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/warden-1.2.7/lib/warden/manager.rb:36:in `block in call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/warden-1.2.7/lib/warden/manager.rb:35:in `catch'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/warden-1.2.7/lib/warden/manager.rb:35:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rack-2.0.3/lib/rack/etag.rb:25:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rack-2.0.3/lib/rack/conditional_get.rb:25:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rack-2.0.3/lib/rack/head.rb:12:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rack-2.0.3/lib/rack/session/abstract/id.rb:232:in `context'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rack-2.0.3/lib/rack/session/abstract/id.rb:226:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/middleware/cookies.rb:613:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/callbacks.rb:97:in `__run_callbacks__'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/callbacks.rb:750:in `_run_call_callbacks'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/callbacks.rb:90:in `run_callbacks'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/middleware/callbacks.rb:36:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/railties-5.0.4/lib/rails/rack/logger.rb:36:in `call_app'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/railties-5.0.4/lib/rails/rack/logger.rb:24:in `block in call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/tagged_logging.rb:69:in `block in tagged'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/tagged_logging.rb:26:in `tagged'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/tagged_logging.rb:69:in `tagged'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/railties-5.0.4/lib/rails/rack/logger.rb:24:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/middleware/request_id.rb:24:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rack-2.0.3/lib/rack/method_override.rb:22:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rack-2.0.3/lib/rack/runtime.rb:22:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.4/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/middleware/executor.rb:12:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/middleware/static.rb:136:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rack-2.0.3/lib/rack/sendfile.rb:111:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rack-cors-1.0.0/lib/rack/cors.rb:93:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/railties-5.0.4/lib/rails/engine.rb:522:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rack-test-0.6.3/lib/rack/mock_session.rb:30:in `request'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rack-test-0.6.3/lib/rack/test.rb:244:in `process_request'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rack-test-0.6.3/lib/rack/test.rb:124:in `request'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/testing/integration.rb:334:in `process'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/testing/integration.rb:364:in `process_with_kwargs'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/testing/integration.rb:15:in `get'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.4/lib/action_dispatch/testing/integration.rb:442:in `block (2 levels) in <module:Runner>'", "/Users/mac1/Projects/adventurers_hub_backend/spec/requests/api/v1/events_spec.rb:10:in `block (3 levels) in <top (required)>'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example.rb:254:in `instance_exec'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example.rb:254:in `block in run'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example.rb:500:in `block in with_around_and_singleton_context_hooks'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example.rb:457:in `block in with_around_example_hooks'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/hooks.rb:464:in `block in run'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/hooks.rb:604:in `block in run_around_example_hooks_for'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example.rb:342:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-rails-3.6.0/lib/rspec/rails/adapters.rb:127:in `block (2 levels) in <module:MinitestLifecycleAdapter>'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example.rb:447:in `instance_exec'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example.rb:447:in `instance_exec'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/hooks.rb:375:in `execute_with'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/hooks.rb:606:in `block (2 levels) in run_around_example_hooks_for'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example.rb:342:in `call'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/hooks.rb:607:in `run_around_example_hooks_for'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/hooks.rb:464:in `run'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example.rb:457:in `with_around_example_hooks'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example.rb:500:in `with_around_and_singleton_context_hooks'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example.rb:251:in `run'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example_group.rb:627:in `block in run_examples'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example_group.rb:623:in `map'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example_group.rb:623:in `run_examples'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example_group.rb:589:in `run'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example_group.rb:590:in `block in run'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example_group.rb:590:in `map'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/example_group.rb:590:in `run'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/runner.rb:118:in `block (3 levels) in run_specs'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/runner.rb:118:in `map'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/runner.rb:118:in `block (2 levels) in run_specs'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/configuration.rb:1894:in `with_suite_hooks'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/runner.rb:113:in `block in run_specs'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/reporter.rb:79:in `report'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/runner.rb:112:in `run_specs'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/runner.rb:87:in `run'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/runner.rb:71:in `run'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/lib/rspec/core/runner.rb:45:in `invoke'", "/Users/mac1/.rvm/gems/ruby-2.3.1/gems/rspec-core-3.6.0/exe/rspec:4:in `<main>'"]
+Completed 200 OK in 169ms (Views: 99.2ms | ActiveRecord: 19.1ms)
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-07-17 21:56:16 +0200
+Processing by DeviseTokenAuth::RegistrationsController#create as JSON
+  Parameters: {"email"=>"mail@mail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "mail@mail.com"]]
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "users" ("uid", "encrypted_password", "email", "tokens", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["uid", "mail@mail.com"], ["encrypted_password", "$2a$04$ERo2Dx2n7BIY5E79bH7zgec/jScYa.6vHVIRnS7A3MEmevkicyMg2"], ["email", "mail@mail.com"], ["tokens", "{}"], ["created_at", "2017-07-17 19:56:16.222263"], ["updated_at", "2017-07-17 19:56:16.222263"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE "users" SET "tokens" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["tokens", "{\"Nqslialx71me9fxMjJecWw\":{\"token\":\"$2a$10$J8EqTvMSfNqyEP47dXhxTesXfZ0pITIGAcfyKcimCm6FfSRYsoGAO\",\"expiry\":1501530976}}"], ["updated_at", "2017-07-17 19:56:16.333940"], ["id", 89]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (1.1ms)[0m  [1m[37mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2 FOR UPDATE[0m  [["id", 89], ["LIMIT", 1]]
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE "users" SET "tokens" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["tokens", "{\"Nqslialx71me9fxMjJecWw\":{\"token\":\"$2a$10$PRsNsxT074whdv8mmHtgUu3uJBbs1DRUb.5hZ1gu9kr52FMzizabK\",\"expiry\":1501530976,\"last_token\":\"$2a$10$J8EqTvMSfNqyEP47dXhxTesXfZ0pITIGAcfyKcimCm6FfSRYsoGAO\",\"updated_at\":\"2017-07-17T21:56:16.450+02:00\"}}"], ["updated_at", "2017-07-17 19:56:16.452415"], ["id", 89]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 292ms (Views: 0.5ms | ActiveRecord: 5.8ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-07-17 21:56:16 +0200
+Processing by DeviseTokenAuth::RegistrationsController#create as JSON
+  Parameters: {"email"=>"mail@mail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "mail@mail.com"]]
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 422 Unprocessable Entity in 11ms (Views: 0.6ms | ActiveRecord: 1.2ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-07-17 21:56:16 +0200
+Processing by DeviseTokenAuth::RegistrationsController#create as JSON
+  Parameters: {"email"=>"mail@mail", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "mail@mail"]]
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 422 Unprocessable Entity in 12ms (Views: 0.6ms | ActiveRecord: 1.9ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "example@gmail.com"]]
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "users" ("uid", "encrypted_password", "email", "tokens", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["uid", "example@gmail.com"], ["encrypted_password", "$2a$04$dRPYSXlTkJiHK96RPz9Rn.YN41CDuwLyUvtgCPWs4EToIeOuobGDi"], ["email", "example@gmail.com"], ["tokens", "{}"], ["created_at", "2017-07-17 19:56:16.505316"], ["updated_at", "2017-07-17 19:56:16.505316"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/api/v1/auth" for 127.0.0.1 at 2017-07-17 21:56:16 +0200
+Processing by DeviseTokenAuth::RegistrationsController#create as JSON
+  Parameters: {"email"=>"example@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "example@gmail.com"]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 422 Unprocessable Entity in 15ms (Views: 0.7ms | ActiveRecord: 1.2ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "user@random.com"]]
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "users" ("uid", "encrypted_password", "email", "tokens", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["uid", "user@random.com"], ["encrypted_password", "$2a$04$G13bmqeEcpzFJ5fnFPnfEuan9jUrZatBBSaiyHOUS2AQ7q0n79K9C"], ["email", "user@random.com"], ["tokens", "{}"], ["created_at", "2017-07-17 19:56:16.537138"], ["updated_at", "2017-07-17 19:56:16.537138"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/api/v1/auth/sign_in" for 127.0.0.1 at 2017-07-17 21:56:16 +0200
+Processing by DeviseTokenAuth::SessionsController#create as JSON
+  Parameters: {"email"=>"user@random.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (email = 'user@random.com' AND provider='email') ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE "users" SET "tokens" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["tokens", "{\"C-LGMSTyPYhj3Uer6QK6_A\":{\"token\":\"$2a$10$XW99iD9ar1oM/TNFor4wZ.rfTMlhJ2qPFzpphiRQA/5Ya0Dq50gP.\",\"expiry\":1501530976}}"], ["updated_at", "2017-07-17 19:56:16.747176"], ["id", 91]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = $1, "current_sign_in_at" = $2, "last_sign_in_at" = $3, "current_sign_in_ip" = $4, "last_sign_in_ip" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["sign_in_count", 1], ["current_sign_in_at", "2017-07-17 19:56:16.751541"], ["last_sign_in_at", "2017-07-17 19:56:16.751541"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_ip", "127.0.0.1"], ["updated_at", "2017-07-17 19:56:16.753038"], ["id", 91]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[37mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2 FOR UPDATE[0m  [["id", 91], ["LIMIT", 1]]
+  [1m[35mSQL (0.7ms)[0m  [1m[33mUPDATE "users" SET "tokens" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["tokens", "{\"C-LGMSTyPYhj3Uer6QK6_A\":{\"token\":\"$2a$10$YgZh7VqGqNouz08UbYrkKOuRgyrLvbeF45vr8i5BXbgs1APHq6Mcu\",\"expiry\":1501530976,\"last_token\":\"$2a$10$XW99iD9ar1oM/TNFor4wZ.rfTMlhJ2qPFzpphiRQA/5Ya0Dq50gP.\",\"updated_at\":\"2017-07-17T21:56:16.845+02:00\"}}"], ["updated_at", "2017-07-17 19:56:16.846756"], ["id", 91]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 204ms (Views: 0.4ms | ActiveRecord: 5.5ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "user@random.com"]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "users" ("uid", "encrypted_password", "email", "tokens", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["uid", "user@random.com"], ["encrypted_password", "$2a$04$8ckbpcXm79/d6yHM5YMsqOjubftdc./cnP2GGBYImPsOv6TiCpMki"], ["email", "user@random.com"], ["tokens", "{}"], ["created_at", "2017-07-17 19:56:16.858271"], ["updated_at", "2017-07-17 19:56:16.858271"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/api/v1/auth/sign_in" for 127.0.0.1 at 2017-07-17 21:56:16 +0200
+Processing by DeviseTokenAuth::SessionsController#create as JSON
+  Parameters: {"email"=>"user@random.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (email = 'user@random.com' AND provider='email') ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+Completed 401 Unauthorized in 6ms (Views: 0.4ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "user@random.com"]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "users" ("uid", "encrypted_password", "email", "tokens", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["uid", "user@random.com"], ["encrypted_password", "$2a$04$DAx9C958qlweMN22sOYZWOXplexoA6z6DxTf2pcOsN6ZxpKwxs5KW"], ["email", "user@random.com"], ["tokens", "{}"], ["created_at", "2017-07-17 19:56:16.875410"], ["updated_at", "2017-07-17 19:56:16.875410"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started POST "/api/v1/auth/sign_in" for 127.0.0.1 at 2017-07-17 21:56:16 +0200
+Processing by DeviseTokenAuth::SessionsController#create as JSON
+  Parameters: {"email"=>"wrong@email.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (email = 'wrong@email.com' AND provider='email') ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+Completed 401 Unauthorized in 4ms (Views: 0.4ms | ActiveRecord: 1.2ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (16.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/events/new" for 127.0.0.1 at 2017-07-17 21:57:02 +0200
+Processing by EventsController#new as HTML
+  Rendering events/new.html.haml within layouts/application
+  Rendered events/new.html.haml within layouts/application (532.6ms)
+Completed 200 OK in 690ms (Views: 597.8ms | ActiveRecord: 26.1ms)
+Started POST "/events" for 127.0.0.1 at 2017-07-17 21:57:03 +0200
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "event"=>{"title"=>"Beach Party", "content"=>"Enjoy your summer vacation at Boracay"}, "commit"=>"Save"}
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "events" ("title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Beach Party"], ["content", "Enjoy your summer vacation at Boracay"], ["created_at", "2017-07-17 19:57:03.494785"], ["updated_at", "2017-07-17 19:57:03.494785"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/events/new
+Completed 302 Found in 5ms (ActiveRecord: 1.3ms)
+Started GET "/events/new" for 127.0.0.1 at 2017-07-17 21:57:03 +0200
+Processing by EventsController#new as HTML
+  Rendering events/new.html.haml within layouts/application
+  Rendered events/new.html.haml within layouts/application (5.2ms)
+Completed 200 OK in 16ms (Views: 13.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/" for 127.0.0.1 at 2017-07-17 21:57:03 +0200
+Processing by HomeController#index as HTML
+  [1m[36mEvent Load (1.8ms)[0m  [1m[34mSELECT  "events".* FROM "events" ORDER BY "events"."id" DESC LIMIT $1[0m  [["LIMIT", 5]]
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 18ms (Views: 10.2ms | ActiveRecord: 1.8ms)
+Started GET "/users/sign_up" for 127.0.0.1 at 2017-07-17 21:57:03 +0200
+Processing by RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 117ms (Views: 80.3ms | ActiveRecord: 4.2ms)
+Started POST "/users" for 127.0.0.1 at 2017-07-17 21:57:03 +0200
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"user@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", "user@example.com"]]
+  [1m[35mSQL (15.8ms)[0m  [1m[32mINSERT INTO "users" ("uid", "encrypted_password", "email", "tokens", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["uid", "user@example.com"], ["encrypted_password", "$2a$04$VDndwj0PkIbajTARGe5Iy.7/ofRRxKYu4qgiyCSKWKM1xDDj2kNm."], ["email", "user@example.com"], ["tokens", "{}"], ["created_at", "2017-07-17 19:57:03.850482"], ["updated_at", "2017-07-17 19:57:03.850482"]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = $1, "current_sign_in_at" = $2, "last_sign_in_at" = $3, "current_sign_in_ip" = $4, "last_sign_in_ip" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["sign_in_count", 1], ["current_sign_in_at", "2017-07-17 19:57:03.869021"], ["last_sign_in_at", "2017-07-17 19:57:03.869021"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_ip", "127.0.0.1"], ["updated_at", "2017-07-17 19:57:03.870241"], ["id", 94]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/
+Completed 302 Found in 119ms (ActiveRecord: 19.6ms)
+Started GET "/" for 127.0.0.1 at 2017-07-17 21:57:03 +0200
+Processing by HomeController#index as HTML
+  [1m[36mEvent Load (0.6ms)[0m  [1m[34mSELECT  "events".* FROM "events" ORDER BY "events"."id" DESC LIMIT $1[0m  [["LIMIT", 5]]
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 13ms (Views: 8.6ms | ActiveRecord: 0.6ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/" for 127.0.0.1 at 2017-07-17 21:57:03 +0200
+Processing by HomeController#index as HTML
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT  "events".* FROM "events" ORDER BY "events"."id" DESC LIMIT $1[0m  [["LIMIT", 5]]
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 12ms (Views: 8.7ms | ActiveRecord: 0.5ms)
+Started GET "/users/sign_up" for 127.0.0.1 at 2017-07-17 21:57:03 +0200
+Processing by RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 33ms (Views: 32.6ms | ActiveRecord: 0.0ms)
+Started POST "/users" for 127.0.0.1 at 2017-07-17 21:57:04 +0200
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "user"=>{"email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" WHERE "users"."provider" = $1 AND "users"."email" = $2[0m  [["provider", "email"], ["email", ""]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 69ms (Views: 37.0ms | ActiveRecord: 1.2ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
