@@ -9,6 +9,7 @@ Event.create(title: "Beach Volleyball", content: "Enjoy your summer vacation at 
 Event.create(title: "Island Hopping", content: "Enjoy your awesome party")
 
 User.create(email: 'user@example.com', nickname: 'UOne', name: 'User One', password: "monkey67")
+User.create(email: 'jen@gmail.com', nickname: 'Jenny', name: 'Jennifer', password: "1234567")
 
 puts "Created #{Event.count} events"
 puts "Created #{User.count} users"

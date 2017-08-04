@@ -13,9 +13,7 @@ gem 'haml-rails'
 gem 'turbolinks'
 gem 'devise'
 gem 'devise_token_auth'
-#gem 'omniauth'
-#gem 'rails_12factor', group: :production
-#gem 'remotipart'
+gem 'remotipart'
 
 
 group :development, :test do
