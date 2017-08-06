@@ -14,6 +14,7 @@ gem 'turbolinks'
 gem 'devise'
 gem 'devise_token_auth'
 gem 'remotipart'
+gem 'bootstrap-sass'
 
 
 group :development, :test do
