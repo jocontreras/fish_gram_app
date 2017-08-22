@@ -11,8 +11,7 @@ require "action_cable/engine"
 Bundler.require(*Rails.groups)
 
 
-
-module AdventureApi
+module FishgramApi
   class Application < Rails::Application
     config.autoload_paths += %W(#{config.root}/lib)
     config.generators do |generate|

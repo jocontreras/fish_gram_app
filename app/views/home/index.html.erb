@@ -1,9 +1,14 @@
 <section class="hero">
   <div class="wrap">
-    <h2>
-      <i>Hello! Welcome to Fish App</i>
-    </h2>
+    <h2>Welcome to Fish App, </h2><strong><%= current_user.email %></strong>
   </div>
-  <%= link_to 'Sign up', new_user_registration_path %>
-  <%= link_to 'Sign out', destroy_user_session_path, {method: :delete} %>
+  <div
+  <div class="wrap">
+    <h4><i>News Updates</i></h4>
+    <%= @events.each do |events| %>
+      <%= events.title %></br>
+      <%= events.content %></br>
+    <%end %>
+  </div>
+  <div
 </section>

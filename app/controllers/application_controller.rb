@@ -1,14 +1,14 @@
 class ApplicationController < ActionController::Base
-  include DeviseTokenAuth::Concerns::SetUserByToken
+  #include DeviseTokenAuth::Concerns::SetUserByToken
+  protect_from_forgery with: :exception
 
-protect_from_forgery with: :exception, unless: :json_request?
+  before_action :configure_permitted_parameters, if: :devise_controller?
 
   protected
 
-
-  def json_request?
-    request.format.json?
+  def configure_permitted_parameters
+    added_attrs =[:email, :password, :password_confirmation, :remember_me]
+    devise_parameter_sanitizer.permit :sign_up, keys: added_attrs
+    devise_parameter_sanitizer.permit :account_update, keys: added_attrs
   end
-
-
 end

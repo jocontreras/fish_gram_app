@@ -11,11 +11,10 @@ gem 'jquery-rails'
 gem 'rack-cors', require: 'rack/cors'
 gem 'haml-rails'
 gem 'turbolinks'
-gem 'devise'
+gem 'devise', '~> 4.1'
 gem 'devise_token_auth'
 gem 'remotipart'
-gem 'bootstrap-sass'
-
+gem 'bootstrap-sass', '~> 3.3'
 
 group :development, :test do
   gem 'pry-byebug'
