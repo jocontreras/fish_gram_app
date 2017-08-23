@@ -1,11 +1,12 @@
 <section class="hero">
   <div class="wrap">
-    <h2>Welcome to Fish App, </h2><strong><%= current_user.email %></strong>
+    <h2>Welcome to Fishgram App, </h2>
+
   </div>
   <div
   <div class="wrap">
     <h4><i>News Updates</i></h4>
-    <%= @events.each do |events| %>
+    <% @events.each do |events| %>
       <%= events.title %></br>
       <%= events.content %></br>
     <%end %>
