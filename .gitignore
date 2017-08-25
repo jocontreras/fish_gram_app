@@ -7,4 +7,4 @@ plugins/
 .idea/
 .DS_Store
 www/lib/*
-log/
+/log/*.log
