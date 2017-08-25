@@ -32825,3 +32825,152 @@ puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
 puma (3.10.0) lib/puma/server.rb:437:in `process_client'
 puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/mac1/Projects/FishGram/config/initializers/new_framework_defaults.rb:15)
+Started GET "/" for 127.0.0.1 at 2017-08-25 11:38:01 +0200
+  [1m[35m (43.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  [1m[36mEvent Load (2.8ms)[0m  [1m[34mSELECT  "events".* FROM "events" ORDER BY "events"."id" DESC LIMIT $1[0m  [["LIMIT", 5]]
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (23.5ms)
+  Rendered shared/_navbar.html.erb (5.7ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 294ms (Views: 107.7ms | ActiveRecord: 52.5ms)
+
+
+Started GET "/api/v1/events" for 127.0.0.1 at 2017-08-25 11:38:13 +0200
+Processing by Api::V1::EventsController#index as JSON
+  Rendering api/v1/events/index.json.jbuilder
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered api/v1/events/index.json.jbuilder (26.8ms)
+Completed 200 OK in 48ms (Views: 42.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-25 11:39:33 +0200
+Processing by HomeController#index as HTML
+  [1m[36mEvent Load (0.6ms)[0m  [1m[34mSELECT  "events".* FROM "events" ORDER BY "events"."id" DESC LIMIT $1[0m  [["LIMIT", 5]]
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+  Rendered shared/_navbar.html.erb (1.5ms)
+  Rendered shared/_footer.html.erb (0.6ms)
+Completed 200 OK in 71ms (Views: 41.0ms | ActiveRecord: 0.6ms)
+
+
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/mac1/Projects/FishGram/config/initializers/new_framework_defaults.rb:15)
+Started GET "/api/v1/events" for 127.0.0.1 at 2017-08-25 13:11:01 +0200
+  [1m[35m (81.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::EventsController#index as JSON
+  Rendering api/v1/events/index.json.jbuilder
+  [1m[36mEvent Load (18.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered api/v1/events/index.json.jbuilder (107.9ms)
+Completed 200 OK in 273ms (Views: 113.8ms | ActiveRecord: 51.0ms)
+
+
+Started GET "/api/v1/events" for 127.0.0.1 at 2017-08-25 13:11:13 +0200
+Processing by Api::V1::EventsController#index as JSON
+  Rendering api/v1/events/index.json.jbuilder
+  [1m[36mEvent Load (0.8ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered api/v1/events/index.json.jbuilder (8.2ms)
+Completed 200 OK in 56ms (Views: 38.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/v1/events" for 127.0.0.1 at 2017-08-25 13:11:14 +0200
+Processing by Api::V1::EventsController#index as JSON
+  Rendering api/v1/events/index.json.jbuilder
+  [1m[36mEvent Load (6.9ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered api/v1/events/index.json.jbuilder (12.6ms)
+Completed 200 OK in 63ms (Views: 51.9ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-25 13:12:17 +0200
+Processing by HomeController#index as HTML
+  [1m[36mEvent Load (0.7ms)[0m  [1m[34mSELECT  "events".* FROM "events" ORDER BY "events"."id" DESC LIMIT $1[0m  [["LIMIT", 5]]
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (22.5ms)
+  Rendered shared/_navbar.html.erb (8.4ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 161ms (Views: 112.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/v1/events" for 127.0.0.1 at 2017-08-25 13:12:28 +0200
+Processing by Api::V1::EventsController#index as JSON
+  Rendering api/v1/events/index.json.jbuilder
+  [1m[36mEvent Load (0.6ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered api/v1/events/index.json.jbuilder (3.5ms)
+Completed 200 OK in 47ms (Views: 22.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/v1/events" for 127.0.0.1 at 2017-08-25 13:13:43 +0200
+Processing by Api::V1::EventsController#index as JSON
+Started GET "/api/v1/events" for 127.0.0.1 at 2017-08-25 13:13:43 +0200
+Processing by Api::V1::EventsController#index as JSON
+  Rendering api/v1/events/index.json.jbuilder
+  Rendering api/v1/events/index.json.jbuilder
+  [1m[36mEvent Load (3.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered api/v1/events/index.json.jbuilder (12.6ms)
+Completed 200 OK in 115ms (Views: 90.1ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/api/v1/events" for 127.0.0.1 at 2017-08-25 13:13:44 +0200
+Processing by Api::V1::EventsController#index as JSON
+  Rendering api/v1/events/index.json.jbuilder
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered api/v1/events/index.json.jbuilder (3.6ms)
+Completed 200 OK in 34ms (Views: 29.5ms | ActiveRecord: 0.5ms)
+
+
+  [1m[36mEvent Load (9.7ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered api/v1/events/index.json.jbuilder (212.1ms)
+Completed 200 OK in 310ms (Views: 161.3ms | ActiveRecord: 140.0ms)
+
+
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/mac1/Projects/FishGram/config/initializers/new_framework_defaults.rb:15)
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/mac1/Projects/FishGram/config/initializers/new_framework_defaults.rb:15)
+Started GET "/api/v1/events" for 127.0.0.1 at 2017-08-25 13:23:07 +0200
+  [1m[35m (37.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::EventsController#index as JSON
+  Rendering api/v1/events/index.json.jbuilder
+  [1m[36mEvent Load (42.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  Rendered api/v1/events/index.json.jbuilder (123.7ms)
+Completed 200 OK in 240ms (Views: 99.4ms | ActiveRecord: 74.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-25 13:23:15 +0200
+Processing by HomeController#index as HTML
+  [1m[36mEvent Load (1.2ms)[0m  [1m[34mSELECT  "events".* FROM "events" ORDER BY "events"."id" DESC LIMIT $1[0m  [["LIMIT", 5]]
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (12.2ms)
+  Rendered shared/_navbar.html.erb (9.0ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 50ms (Views: 43.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-08-25 13:23:18 +0200
+Processing by HomeController#index as HTML
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT  "events".* FROM "events" ORDER BY "events"."id" DESC LIMIT $1[0m  [["LIMIT", 5]]
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+  Rendered shared/_navbar.html.erb (1.5ms)
+  Rendered shared/_footer.html.erb (0.6ms)
+Completed 200 OK in 24ms (Views: 18.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-08-25 13:23:21 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (395.3ms)
+  Rendered shared/_navbar.html.erb (1.9ms)
+  Rendered shared/_footer.html.erb (0.6ms)
+Completed 200 OK in 514ms (Views: 432.2ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2017-08-25 13:23:24 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (7.0ms)
+  Rendered shared/_navbar.html.erb (1.1ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 56ms (Views: 54.3ms | ActiveRecord: 0.0ms)
+
+
